@@ -1,0 +1,115 @@
+:root{
+    --light-gray: #f0f0f0;
+    --design: #E6563B;
+    --develop: #DEA03D;
+    --support: #7CB06C;
+    --host: #00ABA9;
+}
+
+body{
+    background-color: var(--light-gray);
+    font-family: 'Abel', sans-serif;
+    text-transform: uppercase;
+}
+
+.top-nav{
+    height: 3em;
+}
+
+#logo{
+    height: 105px;
+    width: 105px;
+    position: relative;
+    top: -2em;
+}
+
+.logo-div{
+    height: 3em;
+    z-index: 1000;
+    background-color: #fff;
+}
+
+nav h1{
+    height: 2em;
+    text-transform: lowercase;
+}
+
+nav li a{
+    color: #000;
+}
+
+.main-title{
+    font-family: 'Anton', sans-serif;
+}
+
+.sub-title{
+    font-family: 'Anton', sans-serif;
+    margin: 2em 0 2em 0;
+}
+
+.design {
+    background-color: var(--design);
+}
+
+.develop {
+    background-color: var(--develop);
+}
+
+.support {
+    background-color: var(--support);
+}
+
+.host {
+    background-color: var(--host);
+}
+
+.circle{
+    width: 105px;
+    height: 105px;
+    border: 10px solid white;
+    font-family: 'Anton', sans-serif;
+    color: #fff;
+}
+
+.circle h2{
+    position: relative;
+    top: 1.4em;
+    font-size: 20px;
+}
+
+.project-buttons {
+    padding: 1em;
+    width: 35px;
+    height: 35px;
+    font-family: 'Anton', sans-serif;
+}
+
+.project-img{
+    border: 15px solid #E6E6E6;
+    border-radius: 10px;
+}
+button span{
+    position: relative;
+    top: -.7em;
+}
+
+/*      SMALL SCREEN      */
+@media screen and (min-width: 576px) {
+    nav ul{
+        width: 100%;
+    }
+    .nav-item{
+        width: 15%;
+       position: relative;
+        top: -2.5em;
+        z-index: 1000;
+    }
+    .nav-item-1{
+         width:20%;
+         }
+    .nav-item-2{
+        width: 20%;
+    }
+
+
+}
