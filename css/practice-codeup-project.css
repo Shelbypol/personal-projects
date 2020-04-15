@@ -29,8 +29,6 @@ body{
     background-color: #fff;
 }
 
-/*  FIX NAV */
-
 nav h1{
     height: 2em;
     text-transform: lowercase;
@@ -66,17 +64,42 @@ nav li a{
 }
 
 .circle{
+    background-size: cover;
     width: 105px;
     height: 105px;
     border: 10px solid white;
-    font-family: 'Anton', sans-serif;
-    color: #fff;
 }
+
+.red {
+    background-image: url("../img/circle-red.png");
+}
+
+.orange{
+    background-image: url("../img/circle-orange.png");
+}
+
+.lightgreen{
+    background-image: url("../img/circle-lightgreen.png");
+}
+
+.teal{
+    background-image: url("../img/circle-teal.png");
+}
+
+/*.circle{*/
+/*    width: 105px;*/
+/*    height: 105px;*/
+/*    border: 10px solid white;*/
+/*    font-family: 'Anton', sans-serif;*/
+/*    color: #fff;*/
+/*}*/
 
 .circle h2{
     position: relative;
     top: 1.4em;
     font-size: 20px;
+    font-family: 'Anton', sans-serif;
+    color: #fff;
 }
 
 .featured-projects h3{
@@ -132,6 +155,16 @@ button span{
         width: 20%;
     }
 
+    .circle{
+        width: 125px;
+        height: 125px;
+        padding: 2.5em;
+    }
+
+    .circle h2{
+        top: -.1em;
+    }
+
     /*    Featured projects small screen*/
     .project-img{
         border: 5px solid #E6E6E6;
@@ -168,7 +201,6 @@ button span{
     button span{
         font-size: 1em;
     }
-
 }
 
 /*      MEDIUM SCREEN      */
@@ -186,12 +218,24 @@ button span{
         width: 100%;
     }
 
+    .circle{
+        width: 145px;
+        height: 145px;
+        padding: 4.5em;
+    }
+
+    .circle h2{
+        top:-.4em;
+    }
+
     .mobile-phone{
         background-image: url("../img/mobile-phone.jpg");
     }
+
     .head{
         background-image: url("../img/head.jpg");
     }
+
     .ipad{
         background-image: url("../img/ipad.jpg");
     }
