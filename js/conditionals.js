@@ -66,23 +66,21 @@ console.log(randomColor + ": " + analyzeColor(randomColor));
 //     }
 // }
 
-
-switch(randomColor) {
+var userColor = prompt("Name a color");
+switch(userColor) {
     case 'blue':
-        console.log('Blue is the color of the sky');
+        alert('Blue is the color of the sky');
         break;
     case 'red':
-        console.log('Strawberries are red');
+        alert('Strawberries are red');
         break;
     case 'cyan':
-        console.log('Well I don\'t know anything about cyan');
+        alert('Well I don\'t know anything about cyan');
         break;
     default :
-        console.log('Never heard of it');
+        alert('Never heard of it');
         break;
 }
-
-
 
 /**
  * TODO:
