@@ -110,6 +110,28 @@ switch(userColor) {
  * Test your function by passing it various values and checking for the expected
  * return value.
  */
+function calculatedTotal(luckyNumber){
+    var totalBill = (100 - (100 * percentage);
+    var percentage;
+    if(luckyNumber === 0){
+         percentage === 0;
+    } else if (luckyNumber === 1) {
+        percentage === .10;
+    } else if (luckyNumber === 2){
+         percentage === .25;
+    } else if(luckyNumber === 3){
+         percentage === .35;
+    } else if (luckyNumber === 4){
+         percentage === .50;
+    } else if (luckyNumber === 5){
+         percentage = 100;
+    } else {
+         "not a winner";
+    }
+    return (totalBill - (totalBill * percentage));
+}
+console.log(luckyNumber);
+console.log(calculatedTotal());
 
 /**
  * TODO:
@@ -119,7 +141,7 @@ switch(userColor) {
  * price before the discount was, and what their price after the discount is.
  */
 // Generate a random number between 0 and 6
-// var luckyNumber = Math.floor(Math.random() * 6);
+var luckyNumber = Math.floor(Math.random() * 6);
 
 /**
  * TODO:
