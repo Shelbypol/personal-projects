@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Personal JavaScript Library</title>
+    </head>
+    <body>
+
+    ParseFloat Backend
+    ParseFloat Front and Back
+
+    <script>
+        'use strict';
+
+        //======= Parse Float the Backend
+        function parseFloatBackEnd(input) {
+            var inputReverse = input.split('').reverse().join('');
+            return(parseFloat(inputReverse));
+        }
+        // console.log(parseFloatBackEnd('gr8')); // 8
+        //======== End
+
+                        // //========  Parse Float Front & Back
+                        // function parseFloatFrontBack(input) {
+                        //     var fontEndParse = parseFloat(input);
+                        //     var inputReverse = fontEndParse.toString().split('').reverse().join('');
+                        //     return parseFloat(Number(inputReverse));
+                        // }
+                        // console.log(parseFloatFrontBack('gr8t')); // 8
+        // function isEven(input) {
+        //     if (input === false){
+        //         return false;
+        //     }
+        //     return input % 2 === 0;
+        // }
+        //
+        // console.log(isEven());
+
+            function isVowel(letter) {
+                var lowerLetter = letter.toLowerCase();
+                var b = true === (lowerLetter === 'a' || 'e' || 'i' || 'o' || 'u') ? true : false;
+                return b;
+            }
+        console.log(isVowel('a'))
+
+
+    </script>
+
+
+
+    </body>
+</html>
