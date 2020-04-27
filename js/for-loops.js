@@ -44,4 +44,4 @@ function downFive() {
         console.log(i);
     }
 }
-downFive();
+// downFive();
