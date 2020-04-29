@@ -22,22 +22,31 @@ function isOddBetween(num) {
 
 var userInput;
 
-while (true) {
-    userInput = prompt('odd and under 50, above 0 #');
-    if (isOddBetween(userInput)) {
-        console.log('Your number to skip ' + userInput);
-        break;
-    }
+    // for (var i = 1; i < 50; i += 2) {
+    //     userInput = prompt('odd and under 50, above 0 #');
+    //
+    //     if (isOddBetween(userInput)) {
+    //         console.log('Your number to skip ' + userInput);
+    //
+    //     console.log(i);
+    //         console.log('Yikes Skipping number : ' + userInput);
+    //     }
+    // }
+    // }// for loop end
 
-    for (var i = 1; i < 50; i += 2) {
-        if (isOddBetween(userInput) === i) {
-            console.log('Yikes Skipping number : ' + username);
-            continue;
-        }
-        console.log(i);
-    }
-}
 
+
+//
+// for (var i = 1; i < 50; i += 2) {
+//     userInput = prompt('odd and under 50, above 0 #');
+//         if (isOddBetween(userInput)) {
+//             if(userInput === i){
+//                 console.log(i.toString(i.replace(i, console.log('Yikes, you\'r skipping this number :' + userInput))));
+//             }
+//             console.log('Your number to skip ' + userInput);
+//         }
+//     console.log(i);
+// }
 
 
 
@@ -50,15 +59,15 @@ while (true) {
 //         console.log('Your number to skip ' + userInput);
 //         break;
 //     }
-//
+//}
 //     for (var i = 1; i < 50; i += 2) {
 //         if (isOddBetween(userInput) === i) {
-//             console.log('Yikes Skipping number : ' + username);
+//             console.log('Yikes Skipping number : ' + userInput);
 //             continue;
 //         }
 //         console.log(i);
 //     }
-// }
+//
 
 
 
