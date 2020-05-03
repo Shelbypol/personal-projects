@@ -11,55 +11,80 @@
 
         //turn string input into array and forEach to check each element against user input...User input accepts string and turns it into arary to compare and if item does not match return item that does not match 'break'
 
-        var htmlExercisesString = 'welcome.html github.html forms.html css_selectors.html login-form.html messages.html twitter.html flexbox-fundamentals-exercise.html flex-form.html flexbox-cards.html flexbox-nav-exercise.html mondrian.html streaming-player-ui.html css-grid-layout-1.html css-grid-layout-2.html css-grid-layout-3.html media-queries.html order-pizza.html codeup-design.html inline_js.html external_js.html functions_js.html conditionals.html loops.html iterating_arrays_js.html planets-js.html split-join.html objects.html';
+var htmlExercisesString = `welcome.html
+github.html
+forms.html
+css_selectors.html
+login-form.html
+messages.html
+twitter.html
+flexbox-fundamentals-exercise.html
+flex-form.html
+flexbox-cards.html
+flexbox-nav-exercise.html
+mondrian.html
+streaming-player-ui.html
+css-grid-layout-1.html
+css-grid-layout-2.html
+css-grid-layout-3.html
+order-pizza.html
+inline_js.html
+external_js.html
+functions_js.html
+conditionals.html
+loops.html
+iterating_arrays_js.html
+planets-js.html
+split-join.html
+objects.html`;
 
-        var htmlClassExercisesArray = htmlExercisesString.split(' ').sort();
+//wrap in backwards tilde, ` ` ,insert list of class exercises separated by a space
+var personalExercises = `css_selectors.html
+css-grid-layout-1.html
+css-grid-layout-2.html
+css-grid-layout-3.html
+css-grid-lecture.html
+external_js.html`;
 
-        //turn personal work list into array
-   var htmlPersonalExericsesArray = function(html) {
-       return html.split(' ').sort();
-   }
-        //if arrays are not same length add blank strings to one or the other to make them the same length
-        function lengthCheck(){
-            if(htmlClassExercisesArray.length === htmlPersonalExericsestArray.length){
-               compare();
-            }else if(htmlClassExercisesArray.length > htmlPersonalExericsestArray.length){
-                var spacesToAdd = htmlClassExercisesArray.length - htmlPersonalExericsesArray;
-                var newHtmlPersonalArray =  htmlPersonalExericsesArray.fill(' ',htmlPersonalExericsetArray.length, htmlPersonalExericsetArray.length === htmlClassExercisesArray.length);
-                return newHtmlPersonalArray;
-            }else {
-                console.log('to many items entered');
-            }
-        }
+   var classHtmlArray = htmlExercisesString.split(' ').sort();
+    var personalHtmlArray = personalExercises.split(' ').sort();
+
 
         function compare(arr1, arr2){
-            arr2.forEach(function(element2){
-               var compare2 = element2;
-            if(arr1.includes(element2)){
-                console.log('Matches \n' + 'Yours: ' + element2);
+            if(arr1.includes(arr2)){
+                console.log("match");
             }
-            });
-        }
 
-        compare(htmlClassExercisesArray, )
+function lengthCheck(arr1, arr2){
+    if(arr1.length === arr2.length){
+        compare(arr1, arr2);
+     }else if(arr1.length > arr2.length){
+        // var numSpacesToFill = arr1.length - arr2.length;
+        var equalLengthArr2 = arr2.fill(' ', arr2.length, arr1.length-1 );
+        compare(arr1, equalLengthArr2);
+    }
 
-        // function compareExercises(html) {
-        //             var personalList = html.split(' ').sort().join(',');
-        //             htmlClassExercisesArray.forEach(function (exercise) {
-        //                 personalList.forEach(function(myWork){
-        //                     if (exercise === myWork) {
-        //                         console.log('MATCH\n' + exercise + '  ' + myWork);
-        //                     } else {
-        //                         console.log(' :NOT A MATCH');
-        //                     }
-        //                 });
-        //             });
-        //         }
-        //         compareExercises(`css-grid-layout-3.html
-        // css-grid-layout-1.html
-        // css-grid-layout-2.html
-        // css-grid-lecture.html`);
+}
+
+//return ones that don't match
 //
+// function compare(arr1, arr2){
+//     if(arr1.includes(arr2)){
+//         console.log("match");
+//     }
+    // arr1.forEach(function(element1){
+    //     arr2.forEach(function(element2){
+    //         if(arr1.includes(element2)){
+    //             console.log('MATCH \n' + 'Yours: ' + element2 + '/n Class: ' + arr1);
+    //         } else{
+    //             console.log('NO \n' + 'Yours: ' + element2 + '/n Class ' + arr1);
+    //         }
+    //     });
+    // });
+}
+
+lengthCheck(classHtmlArray, personalHtmlArray);
+
 
 
 
