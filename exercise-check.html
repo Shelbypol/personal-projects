@@ -16,18 +16,32 @@
         var htmlClassExercisesArray = htmlExercisesString.split(' ').sort();
 
         //turn personal work list into array
-        function htmlPersonalExericsestArray(html) {
-            return html.split(' ').sort();
-        }
+   var htmlPersonalExericsesArray = function(html) {
+       return html.split(' ').sort();
+   }
         //if arrays are not same length add blank strings to one or the other to make them the same length
         function lengthCheck(){
             if(htmlClassExercisesArray.length === htmlPersonalExericsestArray.length){
-                // call compare function;
+               compare();
             }else if(htmlClassExercisesArray.length > htmlPersonalExericsestArray.length){
-                var spacesToAdd = htmlClassExercisesArray.length - htmlPersonalExericsestArray;
-                    htmlPersonalExericsestArray.push(' ')
+                var spacesToAdd = htmlClassExercisesArray.length - htmlPersonalExericsesArray;
+                var newHtmlPersonalArray =  htmlPersonalExericsesArray.fill(' ',htmlPersonalExericsetArray.length, htmlPersonalExericsetArray.length === htmlClassExercisesArray.length);
+                return newHtmlPersonalArray;
+            }else {
+                console.log('to many items entered');
             }
         }
+
+        function compare(arr1, arr2){
+            arr2.forEach(function(element2){
+               var compare2 = element2;
+            if(arr1.includes(element2)){
+                console.log('Matches \n' + 'Yours: ' + element2);
+            }
+            });
+        }
+
+        compare(htmlClassExercisesArray, )
 
         // function compareExercises(html) {
         //             var personalList = html.split(' ').sort().join(',');
