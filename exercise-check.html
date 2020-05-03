@@ -11,9 +11,43 @@
 
         //turn string input into array and forEach to check each element against user input...User input accepts string and turns it into arary to compare and if item does not match return item that does not match 'break'
 
-        var classExercisesString = 'welcome.html github.html forms.html css_selectors.html login-form.html messages.html twitter.html flexbox-fundamentals-exercise.html flex-form.html flexbox-cards.html flexbox-nav-exercise.html mondrian.html streaming-player-ui.html css-grid-layout-1.html css-grid-layout-2.html css-grid-layout-3.html media-queries.html order-pizza.html codeup-design.html inline_js.html external_js.html functions_js.html conditionals.html loops.html iterating_arrays_js.html planets-js.html split-join.html objects.html';
+        var htmlExercisesString = 'welcome.html github.html forms.html css_selectors.html login-form.html messages.html twitter.html flexbox-fundamentals-exercise.html flex-form.html flexbox-cards.html flexbox-nav-exercise.html mondrian.html streaming-player-ui.html css-grid-layout-1.html css-grid-layout-2.html css-grid-layout-3.html media-queries.html order-pizza.html codeup-design.html inline_js.html external_js.html functions_js.html conditionals.html loops.html iterating_arrays_js.html planets-js.html split-join.html objects.html';
 
-        var exerciseArray = classExercisesString.
+        var htmlClassExercisesArray = htmlExercisesString.split(' ').sort();
+
+        //turn personal work list into array
+        function htmlPersonalExericsestArray(html) {
+            return html.split(' ').sort();
+        }
+        //if arrays are not same length add blank strings to one or the other to make them the same length
+        function lengthCheck(){
+            if(htmlClassExercisesArray.length === htmlPersonalExericsestArray.length){
+                // call compare function;
+            }else if(htmlClassExercisesArray.length > htmlPersonalExericsestArray.length){
+                var spacesToAdd = htmlClassExercisesArray.length - htmlPersonalExericsestArray;
+                    htmlPersonalExericsestArray.push(' ')
+            }
+        }
+
+        // function compareExercises(html) {
+        //             var personalList = html.split(' ').sort().join(',');
+        //             htmlClassExercisesArray.forEach(function (exercise) {
+        //                 personalList.forEach(function(myWork){
+        //                     if (exercise === myWork) {
+        //                         console.log('MATCH\n' + exercise + '  ' + myWork);
+        //                     } else {
+        //                         console.log(' :NOT A MATCH');
+        //                     }
+        //                 });
+        //             });
+        //         }
+        //         compareExercises(`css-grid-layout-3.html
+        // css-grid-layout-1.html
+        // css-grid-layout-2.html
+        // css-grid-lecture.html`);
+//
+
+
 
     </script>
 
