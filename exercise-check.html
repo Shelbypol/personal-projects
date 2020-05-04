@@ -46,16 +46,20 @@ css-grid-layout-3.html
 css-grid-lecture.html
 external_js.html`;
 
-   var classHtmlArray = htmlExercisesString.split(' ').sort();
-    var personalHtmlArray = personalExercises.split(' ').sort();
+   // var arr1 = htmlExercisesString.split(' ').sort();
+   //  var arr2 = personalExercises.split(' ').sort();
 
+var arr1;
+var arr2;
 
-        function compare(arr1, arr2){
-            if(arr1.includes(arr2)){
-                console.log("match");
-            }
+function compare(arr1, arr2){
+    if(arr1.includes(arr2)){
+        console.log("match");
+    }
 
-function lengthCheck(arr1, arr2){
+function lengthCheck(){
+    var arr1 = htmlExercisesString.split(' ').sort();
+    var arr2 = personalExercises.split(' ').sort();
     if(arr1.length === arr2.length){
         compare(arr1, arr2);
      }else if(arr1.length > arr2.length){
@@ -83,7 +87,7 @@ function lengthCheck(arr1, arr2){
     // });
 }
 
-lengthCheck(classHtmlArray, personalHtmlArray);
+lengthCheck();
 
 
 

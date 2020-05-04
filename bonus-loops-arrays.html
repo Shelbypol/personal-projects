@@ -17,14 +17,36 @@
 
         var rand = Math.floor(Math.random()* 7+1 );
         console.log(daysOfTheWeek.slice(rand, rand+1));
+        // console.log(rand);
+
 
         // 2. Create a function that takes a single letter and returns what number the letter is in the alphabet. Ignore case.
         //
         // someFunction("a") // returns 1
         // someFunction("z") // returns 26
+        var alphabet = 'abcdefghijklmnopqrstuvwxyz';
+        var alphabetArray = alphabet.split('');
+        function alphabetGame(input){
+            input.toLowerCase();
+            if(alphabetArray.includes(input)){
+                console.log((alphabetArray.indexOf(input))+1 + ': ' + input);
+            }
+        }
+        alphabetGame('r');
         //
+        // alphabetArray.forEach(function (letter) {
+        //     console.log( alphabetArray.indexOf(letter)+1 + ': ' +letter);
+        // });
+
+
         // 3. Create a function that returns the longest string in a given array of string elements.
-        //
+        var longestString = ['the', 'Hello, everyone', 'I'];
+        longestString.forEach(function (str) {
+            longestString.indexOf(str);
+            console.log(str.length);
+        })
+
+
         // 4. Create a function that takes in two arrays of elements, including numbers. If all numbers added together in the first array are equal to all the number inputs added in the second array, return true, otherwise, false. Only add together numeric elements but either array may contain non-numeric elements.
         //
         //     var arr1 = ['bob', 1, true, 1, 2];
