@@ -15,15 +15,14 @@ header {
     writing-mode: vertical-rl;
     align-self: center;
     justify-items: end;
-    font-size: 1.2em;
+    font-size: 1.5em;
     border-right: 1.5px solid darkorange;
 }
 
-header h1{
+header #title{
     margin:0;
     padding: 0;
-    letter-spacing: 2px;
-
+    font-weight: bold;
 }
 
 .rotated {
