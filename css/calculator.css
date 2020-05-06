@@ -43,7 +43,7 @@ header h1{
     border-right: 5px solid black;
     background-color: lightgrey;
     display: grid;
-    grid-gap: 5px;
+    grid-gap: 3.5px;
     width: 12em;
     height: 18em;
     grid-template-areas:
