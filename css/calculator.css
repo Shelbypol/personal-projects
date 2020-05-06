@@ -15,14 +15,16 @@ header {
     writing-mode: vertical-rl;
     align-self: center;
     justify-items: end;
-    font-size: 1.5em;
-    border-right: 1.5px solid darkorange;
+    font-size: 1.48em;
+    margin-top: 3px;
+    border-right: 1px solid darkorange;
 }
 
 header #title{
     margin:0;
     padding: 0;
     font-weight: bold;
+
 }
 
 .rotated {
@@ -35,25 +37,27 @@ header #title{
     padding: .3em;
     border-left: 6px solid black;
     border-bottom: 2px solid darkgray;
-    border-top: 8px solid darkgray;
-    border-right: 1px solid black;
+    border-top: 5px solid darkgray;
+    border-right: .5px solid black;
+    border-top-left-radius: 5px;
     background-color: lightgrey;
     display: grid;
-    grid-gap: 3.5px;
+    grid-gap: 3px;
     width: 12em;
     height: 18em;
     grid-template-areas:
-        'input input operand output output'
+        'output output output output output'
         'one two three add add'
         'four five six subtract subtract'
         'seven eight nine times divide'
         'clear clear zero equals decimal';
 }
 
-#calcContainer div{
+#calcContainer button{
     display: flex;
-    border: 1px solid black;
-    border-radius: 3px;
+    border-left: 1px solid black;
+    border-bottom: .5px solid black;
+    border-bottom-left-radius: 2.5px ;
     font-size: 1em;
     justify-content: center;
     align-items: center;
@@ -88,4 +92,8 @@ header #title{
 
 .inputStyle{
     background-color: #f4f4f4;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
 }
