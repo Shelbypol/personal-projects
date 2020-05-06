@@ -9,7 +9,17 @@
     <script>
         'use strict';
 
+        //console.log how many element first array has (first is main class array)
+        //console.log how many elements second array has (second being personal exercise array)
         //turn string input into array and forEach to check each element against user input...User input accepts string and turns it into arary to compare and if item does not match return item that does not match 'break'
+        //turn both strings into arrays
+        //check if element in 2nd array is in first array
+        //if true console.log both elements side by side with MATCH
+        //if false console.log both elements side by side with FIX
+        //cycle through next element until each element in second array has been cycles through
+
+        //use includes(check if array1 includes array 2)
+
 
 var htmlExercisesString = `welcome.html
 github.html
@@ -52,7 +62,16 @@ external_js.html`;
 var arr1;
 var arr2;
 
-function compare(arr1, arr2){
+function compare(classes, personal) {
+    classes.forEach(function(cla) {
+        personal.forEach(function (per) {
+            if(classes.includes(per)){
+                return true;
+            }
+        });//end per forEach
+    });//end cla forEach
+}
+
     if(arr1.includes(arr2)){
         console.log("match");
     }

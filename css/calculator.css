@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    /*width: 25em;*/
+    grid-template-areas:
+        'title calc';
+}
+
+header {
+    writing-mode: vertical-rl;
+    /*display: flex;*/
+    align-self: center;
+    justify-items: end;
+    /*justify-content: end;*/
+    font-size: 1.8em;
+    /*margin: 0;*/
+    /*padding: 0;*/
+    /*position: relative;*/
+}
+
+header h1{
+    margin:0;
+    padding: 0;
+    letter-spacing: 3px;
+}
+
+.rotated {
+    writing-mode: tb-rl;
+    transform: rotate(-180deg);
+}
+
+#calcContainer{
+    margin: 2em auto;
+    padding: .3em;
+    border-left: 5px solid black;
+    border-bottom: 2px solid black;
+    border-top: 10px solid darkgray;
+    border-right: 5px solid black;
+    background-color: lightgrey;
+    display: grid;
+    grid-gap: 5px;
+    width: 12em;
+    height: 18em;
+    grid-template-areas:
+        'input input operand output output'
+        'one two three add add'
+        'four five six subtract subtract'
+        'seven eight nine times divide'
+        'clear clear zero equals decimal';
+}
+
+#calcContainer div{
+    display: flex;
+    border: 1px solid black;
+    border-radius: 3px;
+    font-size: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+#calcContainer{grid-area: calc}
+#title{grid-area: title;}
+#input{grid-area: input;}
+#operand{grid-area: operand;}
+#output{grid-area: output;}
+#one{grid-area: one;}
+#two{grid-area: two;}
+#three{grid-area: three;}
+#add{grid-area: add;}
+#four{grid-area: four;}
+#five{grid-area: five;}
+#six{grid-area: six;}
+#subtract{grid-area: subtract;}
+#seven{grid-area: seven;}
+#eight{grid-area: eight;}
+#nine{grid-area: nine;}
+#times{grid-area: times;}
+#clear{grid-area: clear;}
+#zero{grid-area: zero;}
+#equals{grid-area: equals;}
+#divide{grid-area: divide;}
+#decimal{grid-area: decimal;}
+
+.style{
+    background-color: orange;
+    color: #000;
+}
+
+.inputStyle{
+    background-color: #f4f4f4;
+    border: 2px solid red;
+}
