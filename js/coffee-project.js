@@ -22,10 +22,10 @@ function updateCoffees(e) {
     e.preventDefault(); // don't submit the form, we just want to update the data
     var selectedRoast = roastSelection.value;
     var userInput = userSearch.value;
-    var filteredCoffees = []; //create empty array to hold the for each return value
+    var filteredCoffees = [];
     coffees.forEach(function (coffee) {
         var arrayNameLower = coffee.name.toLowerCase();
-        if (coffee.roast === selectedRoast && arrayNameLower.startsWith(userInput) === true ) {
+        if (coffee.roast === selectedRoast && (arrayNameLower.startsWith(userInput) === true)) {
             filteredCoffees.push(coffee);
         }
     });
@@ -52,13 +52,13 @@ var coffees = [
 
 
 var tbody = document.querySelector('#coffees');
-var submitButton = document.querySelector('#submit');
+// var submitButton = document.querySelector('option');
 var roastSelection = document.querySelector('#roast-selection');
 
 var userSearch = document.querySelector('#user-search');
 
 tbody.innerHTML = renderCoffees(coffees);
 
-submitButton.addEventListener('click', updateCoffees);
+roastSelection.addEventListener('mouseover', updateCoffees);
 userSearch.addEventListener('keyup', updateCoffees);
 
