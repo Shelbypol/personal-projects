@@ -50,9 +50,7 @@ var coffees = [
     {id: 14, name: 'French', roast: 'dark'},
 ];
 
-
 var tbody = document.querySelector('#coffees');
-// var submitButton = document.querySelector('option');
 var roastSelection = document.querySelector('#roast-selection');
 
 var userSearch = document.querySelector('#user-search');
