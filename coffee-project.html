@@ -6,44 +6,88 @@
     <link rel="stylesheet" href="css/coffee-project.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
-<body>
-<h1>Coffee!</h1>
+<body class="p-3">
+<h1 class="text-center">Coffee!</h1>
+<hr>
+<div class="container" id="main-container">
 
-<form>
-    <label for="roast-selection"></label>
-    <select class=form-control" id="roast-selection">
-        <option class="option">light</option>
-        <option class="option">medium</option>
-        <option class="option">dark</option>
-    </select>
-<!--    <input id="submit" type="submit" />-->
-</form>
+    <section class="row" id="user-search-add"><!--both forms to search and add coffees should be in this div-->
+        <div class="container, p-3, col-6" id="selectCoffee">
+            <div class="col" id="roast-dd">
+                <form>
+                    <h6>Find a coffee</h6>
+                    <label for="roast-selection"></label>
+                    <select id="roast-selection">
+                        <option>light</option>
+                        <option>medium</option>
+                        <option>dark</option>
+                    </select>
+                </form>
+            </div>
+            <div class="col" id="addCoffee">
+                <form>
+                    <label for='user-search'>What kind of coffee would you like today?</label>
+                    <br>
+                    <input id="user-search" type="search" placeholder="Name of Coffee">
+                </form>
+            </div>
 
-<!--  User Input  -->
-<form>
-    <label for ='user-search'>What kind of coffee would you like today?</label>
-    <br>
-    <input id="user-search" type="search"  placeholder="Name of Coffee">
-</form>
+            <hr>
+            <!--Start User Add Coffee Form-->
 
-<table>
-    <!--        <thead>-->
-    <!--            <tr>-->
-    <!--                <th>ID</th>-->
-    <!--                <th>NAME</th>-->
-    <!--                <th>ROAST</th>-->
-    <!--            </tr>-->
-    <!--        </thead>-->
-    <tbody id="coffees"></tbody>
-</table>
+            <div class="col mt-3" id="roast-selection-dd">
+                <form>
+                    <h6><b>Add your own coffee</b></h6>
+                    <label for="roast-selection2"></label>
+                    <select id="roast-selection2">
+                        <option>light</option>
+                        <option>medium</option>
+                        <option>dark</option>
+                    </select>
+                    <!--        <input id="submit" type="submit" />-->
+                </form>
+            </div>
+
+            <div class="col">
+                <form>
+                    <label for='user-addCoffee'>Would you like to add a coffee?</label>
+                    <br>
+                    <input id="user-addCoffee" type="search" placeholder="Name of Coffee">
+                </form>
+                <input class="mt-2" id="submit" type="submit"/>
+            </div>
+        </div> <!--end add coffee dd-->
+
+
+        <section class="container, p-3, row, mt-6 col-6" id="coffeeList">
+            <div class="col" id=""><!--div for coffee list-->
+                <div id="coffees"></div>
+                <div class="col">
+                    <!--coffee name -->
+                    <!-- </div>
+                    <div class="col-3">
+                       roast section
+                    </div>-->
+                </div>
+            </div><!--div for coffee list-->
+        </section>
+    </section><!--end of coffee search forms div>-->
+
+</div><!--end of main container div-->
 
 
 <script src="js/coffee-project.js"></script>
 
 <!--  BOOTSTRAP JQUERY LINKS  -->
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

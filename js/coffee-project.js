@@ -2,11 +2,10 @@
 
 //taking array input from 'rendered coffees' and organizing it
 function renderCoffee(coffee) {
-    var html = '<tr class="coffee">';
-    // html += '<td>' + coffee.id + '</td>';
-    html += '<td>' + coffee.name + '</td>';
-    html += '<td>' + coffee.roast + '</td>';
-    html += '</tr>';
+    var html = '<div class="coffee">';
+    html += '<p>' + '<b>' + coffee.name + '</b>' + ' ' + coffee.roast + '</p>';
+    // html += '<p>' + coffee.roast + '</p>';
+    html += '</div>';
     return html;
 }
 //taking data from coffee array and giving it to 'rendered coffee'
@@ -17,20 +16,21 @@ function renderCoffees(coffees) {
     }
     return html;
 }
-
+//first form
 function updateCoffees(e) {
     e.preventDefault(); // don't submit the form, we just want to update the data
     var selectedRoast = roastSelection.value;
-    var userInput = userSearch.value;
-    var filteredCoffees = [];
-    coffees.forEach(function (coffee) {
+    var userInput = userSearch.value.toLowerCase();
+    var filteredCoffees = []; //create empty array to hold the for each return value
+    coffees.forEach(function(coffee) {
         var arrayNameLower = coffee.name.toLowerCase();
-        if (coffee.roast === selectedRoast && (arrayNameLower.startsWith(userInput) === true)) {
+        if (arrayNameLower.startsWith(userInput)  && coffee.roast === selectedRoast) {
             filteredCoffees.push(coffee);
         }
     });
-    tbody.innerHTML = renderCoffees(filteredCoffees);
+    coffeeListBody.innerHTML = renderCoffees(filteredCoffees);
 }
+
 
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
 var coffees = [
@@ -50,13 +50,13 @@ var coffees = [
     {id: 14, name: 'French', roast: 'dark'},
 ];
 
-var tbody = document.querySelector('#coffees');
+
+var coffeeListBody = document.querySelector('#coffees'); // creating tbody variable
 var roastSelection = document.querySelector('#roast-selection');
 
 var userSearch = document.querySelector('#user-search');
 
-tbody.innerHTML = renderCoffees(coffees);
+coffeeListBody.innerHTML = renderCoffees(coffees); //displaying the output from the 'rendered coffee & rendered coffees' functions to html table
 
-roastSelection.addEventListener('mouseover', updateCoffees);
+roastSelection.addEventListener('change', updateCoffees); //updates user selection list using the top three functions...
 userSearch.addEventListener('keyup', updateCoffees);
-
