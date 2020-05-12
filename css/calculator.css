@@ -48,7 +48,7 @@ header #title{
     border-right: .5px solid black;
     border-top-left-radius: 5px;
     background-color: darkgray;
-    box-shadow: 8px 8px 12px #000000;
+    box-shadow: 8px 8px 12px #000;
     z-index: 1000;
     display: grid;
     grid-gap: 10px;
@@ -59,7 +59,7 @@ header #title{
         'one two three add add'
         'four five six subtract subtract'
         'seven eight nine times divide'
-        'clear clear zero equals decimal';
+        'clear zero equals equals decimal';
 }
 
 #calcContainer button{
@@ -95,7 +95,7 @@ header #title{
 #divide{grid-area: divide;}
 #decimal{grid-area: decimal;}
 
-.style{
+.calcButton{
     background-color: orange;
     color: #000;
 

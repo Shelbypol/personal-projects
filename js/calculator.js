@@ -1,13 +1,30 @@
 'use strict';
 
-var buttonInput = document.querySelector('button');
-buttonInput.addEventListener('click', buttonEnter);
+
+//Clear
 var outputField = document.querySelector('#output');
 
-function buttonEnter() {
-   return outputField.innerHTML = buttonInput.value;
-}
+//One
+var oneInput = document.getElementById('one');
+oneInput.addEventListener('click', oneButton);
 
+//Two
+var twoInput = document.getElementById('two');
+twoInput.addEventListener('click', twoButton);
+
+
+
+//Clear Button
 document.getElementById("reset").onclick = function() {
    document.getElementById("output").innerHTML = "";
 };
+
+//one
+function oneButton() {
+   return outputField.innerHTML = oneInput.value;
+}
+//two
+function twoButton() {
+   return outputField.innerHTML = twoInput.value;
+}
+
