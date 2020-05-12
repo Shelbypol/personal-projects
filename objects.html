@@ -129,8 +129,13 @@
 //     console.log(books[3].title + ' - ' + books[3].author.firstName + ' ' + books[3].author.lastName);
 //     console.log(books[4].title + ' - ' + books[4].author.firstName + ' ' + books[4].author.lastName);
 
-
-
+        function loggingBooks (books) {
+            books.forEach(function(book) {
+                var bookNumber = (books.indexOf(book)) + 1;
+                console.log('Book # ' + bookNumber + '\n' +book.title+  '\n' + book.author.firstName + ' ' + book.author.lastName) ;
+            });
+        }
+        loggingBooks(books);
         /**
          * TODO:
          * Loop through the books array and output the following information about
@@ -167,6 +172,16 @@
          *   `showBookInfo` function.
          */
 
+        function createBook(title, author) {
+            var newBooks = [
+                {
+                    title:
+                    author:
+                }
+
+            ];
+
+        }
 
     })();
 

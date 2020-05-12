@@ -9,13 +9,19 @@ body {
     grid-template-areas:
         'title calc';
     font-family: 'DM Mono', monospace;
+    background-image: url("../img/math.jpg");
 }
+/*#whitebg{*/
+/*    background-image: url("../img/white.jpg");*/
+/*    background-size: cover;*/
+/*    z-index: -1;*/
+/*}*/
 
 header {
     writing-mode: vertical-rl;
     align-self: center;
     justify-items: end;
-    font-size: 1.48em;
+    font-size: 2.48em;
     margin-top: 3px;
     border-right: 1px solid darkorange;
 }
@@ -24,7 +30,8 @@ header #title{
     margin:0;
     padding: 0;
     font-weight: bold;
-
+    background-color: white ;
+    opacity: .8;
 }
 
 .rotated {
@@ -33,18 +40,20 @@ header #title{
 }
 
 #calcContainer{
-    margin: 2em auto;
-    padding: .3em;
+    margin: 6em auto;
+    padding: .8em;
     border-left: 6px solid black;
     border-bottom: 2px solid darkgray;
     border-top: 5px solid darkgray;
     border-right: .5px solid black;
     border-top-left-radius: 5px;
-    background-color: lightgrey;
+    background-color: darkgray;
+    box-shadow: 8px 8px 12px #000000;
+    z-index: 1000;
     display: grid;
-    grid-gap: 3px;
-    width: 12em;
-    height: 18em;
+    grid-gap: 10px;
+    width: 20em;
+    height: 32em;
     grid-template-areas:
         'output output output output output'
         'one two three add add'
@@ -56,8 +65,9 @@ header #title{
 #calcContainer button{
     display: flex;
     border-left: 1px solid black;
-    border-bottom: .5px solid black;
-    border-bottom-left-radius: 2.5px ;
+    border-bottom: .7px solid black;
+    border-bottom-left-radius: 2.5px;
+    box-shadow: 2px 2px 4px #000000;
     font-size: 1em;
     justify-content: center;
     align-items: center;
@@ -79,7 +89,7 @@ header #title{
 #eight{grid-area: eight;}
 #nine{grid-area: nine;}
 #times{grid-area: times;}
-#clear{grid-area: clear;}
+#reset{grid-area: clear;}
 #zero{grid-area: zero;}
 #equals{grid-area: equals;}
 #divide{grid-area: divide;}
@@ -88,6 +98,7 @@ header #title{
 .style{
     background-color: orange;
     color: #000;
+
 }
 
 .inputStyle{
@@ -96,4 +107,5 @@ header #title{
     border-top: 1px solid black;
     border-left: 3px solid black;
     border-right: 3px solid black;
+     box-shadow: 2px 2px 4px #000000;
 }

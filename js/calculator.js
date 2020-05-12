@@ -1,6 +1,13 @@
 'use strict';
-var numInput = function(event){
-    var number = document.getElementsByClassName('num'.value);
-    document.getElementById('output').innerHTML = number;
+
+var buttonInput = document.querySelector('button');
+buttonInput.addEventListener('click', buttonEnter);
+var outputField = document.querySelector('#output');
+
+function buttonEnter() {
+   return outputField.innerHTML = buttonInput.value;
+}
+
+document.getElementById("reset").onclick = function() {
+   document.getElementById("output").innerHTML = "";
 };
-document.getElementsByClassName('num').addEventListener('click', numInput);
