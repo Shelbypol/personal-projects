@@ -27,6 +27,9 @@ function updateCoffees(e) {
         if (arrayNameLower.startsWith(userInput)  && coffee.roast === selectedRoast) {
             filteredCoffees.push(coffee);
         }
+        if(selectedRoast === all && arrayNameLower.startsWith(userInput)){
+            filteredCoffees.push(coffee);
+        }
     });
     coffeeListBody.innerHTML = renderCoffees(filteredCoffees);
 }
