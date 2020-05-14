@@ -40,7 +40,7 @@ header #title{
 }
 
 #calcContainer{
-    margin: 6em auto;
+    margin: 2.5em auto;
     padding: .8em;
     border-left: 6px solid black;
     border-bottom: 2px solid darkgray;
@@ -52,8 +52,8 @@ header #title{
     z-index: 1000;
     display: grid;
     grid-gap: 10px;
-    width: 20em;
-    height: 32em;
+    width: 18em;
+    height: 30em;
     grid-template-areas:
         'output output output output output'
         'one two three add add'
