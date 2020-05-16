@@ -1,30 +1,38 @@
 'use strict';
 
 
-//Clear
-var outputField = document.querySelector('#output');
+// //Clear
+//
+// //One
 
-//One
-var oneInput = document.getElementById('one');
-oneInput.addEventListener('click', oneButton);
+//
+// //Two
 
-//Two
-var twoInput = document.getElementById('two');
-twoInput.addEventListener('click', twoButton);
+//
+//
+// //Clear Button
+// document.getElementById("reset").onclick = function() {
+//    document.getElementById("output").innerHTML = "";
+// };
+//
+// //one
+// function oneButton() {
+//    return outputField.innerHTML = oneInput.value;
+// }
+// //two
+// function twoButton() {
+//    return outputField.innerHTML = twoInput.value;
+// }
+
+//create an array to store user input and call back?
 
 
+var buttonOutput = [];
+console.log(buttonOutput);
 
-//Clear Button
-document.getElementById("reset").onclick = function() {
-   document.getElementById("output").innerHTML = "";
-};
-
-//one
-function oneButton() {
-   return outputField.innerHTML = oneInput.value;
-}
-//two
-function twoButton() {
-   return outputField.innerHTML = twoInput.value;
-}
+$('.calcButton').on('click', function (e) {
+    e.preventDefault();
+    buttonOutput.push(.calcButton.value());
+    $('#output').html(buttonOutput);
+});
 
