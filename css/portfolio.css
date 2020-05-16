@@ -1,0 +1,76 @@
+body{
+    /*margin: 0 auto;*/
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    display: grid;
+    /*grid-gap: 10px;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    grid-template-areas:
+        'name  .         ... .      navbar'
+        'name  lastName  ... title  photo'
+        '.          lastName  ... title  photo';
+}
+
+.theGrid{
+    border: 1px solid black;
+}
+
+#navbar{
+    grid-area: navbar;
+    display: grid;
+    grid-template-areas:
+    'nav1 nav2 nav3';
+}
+
+/*nav grid*/
+.navItem{
+    writing-mode: tb-rl;
+    transform: rotate(180deg)
+}
+
+#nav1{
+    grid-area: nav1;
+}
+#nav2{
+    grid-area: nav2;
+}
+#nav3{
+    grid-area: nav3;
+}
+
+/*nav grid end*/
+
+
+#name{
+    grid-area: name;
+    writing-mode: tb-rl;
+    transform: rotate(180deg);
+    font-size: 6em;
+    width: 1em;
+    height: 100%;
+}
+
+#lastName{
+    grid-area: lastName;
+    writing-mode: tb-rl;
+    transform: rotate(180deg);
+    font-size: 6em;
+    width: 1em;
+    /*height: 100%;*/
+}
+
+#title{
+    grid-area: title;
+}
+
+#photo{
+    grid-area: photo;
+}
