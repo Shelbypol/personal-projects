@@ -1,6 +1,4 @@
 body {
-    /*margin: 1em;*/
-    /*margin-right: 1em;*/
     background-color: #f4f4f4;
 }
 
@@ -16,10 +14,6 @@ body {
     grid-template-rows: repeat(5, 1fr);
     width: 98.5vw;
     height: 100vh;
-}
-
-.theGrid {
-    /*border: 1px solid black;*/
 }
 
 nav {
@@ -100,7 +94,6 @@ nav {
     width: 8em;
     font-size: 5em;
     display: flex;
-    /*justify-items: end;*/
     align-items: center;
 }
 
