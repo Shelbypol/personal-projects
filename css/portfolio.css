@@ -1,5 +1,7 @@
 body {
     /*margin: 1em;*/
+    /*margin-right: 1em;*/
+    background-color: #f4f4f4;
 }
 
 * {
@@ -12,30 +14,39 @@ body {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    width: 100vw;
+    width: 98.5vw;
     height: 100vh;
 }
 
 .theGrid {
-    border: 1px solid black;
+    /*border: 1px solid black;*/
 }
 
 nav {
-    grid-column: 4/5;
+    grid-column: 5/6;
     grid-row: 1/2;
     font-size: 2em;
     writing-mode: tb-rl;
-    transform: rotate(180deg);
+    transform: rotate(-180deg);
+    margin-bottom: .5em;
 }
 
 .navItem{
     display: flex;
     align-items:start;
-    border: 1px solid black;
-
+    padding-left: .3em;
+    padding-right: .2em;
+    align-self: flex-end;
+    /*text-decoration-line: underline;*/
 }
 
-
+.navItem:hover{
+    background-color: #305252;
+    font-size: 1.1em;
+    color: white;
+    padding: .1em;
+    text-decoration-line: underline;
+}
 
 #nameWrap {
     grid-row: 1/4;
@@ -43,11 +54,8 @@ nav {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    /*border: 1px solid red;*/
     font-size: 5em;
     margin-left: 1em;
-    /*letter-spacing: .3em;*/
-    /*line-height: .2em;*/
     justify-items: start;
     width: 2em;
     height: 100vh;
@@ -59,38 +67,42 @@ nav {
     display: flex;
     align-items: start;
     padding-bottom: .2em;
-    letter-spacing: .4em;
+    letter-spacing: .2em;
     line-height: .2em;
+    padding-left: 1em;
 }
+
+.firstLetter{
+    color: #305252;
+    font-weight: bold;
+}
+
 #lastName{
     grid-row: 2/5;
     grid-column: 1/2;
     transform: rotate(-90deg);
     display: flex;
     align-items: start;
-    /*padding: .2em;*/
-    letter-spacing: .4em;
+    letter-spacing: .2em;
     line-height: 1em;
+    padding-left: 1em;
 }
 
 #title {
     grid-column: 3/4;
-    grid-row: 3/4;
+    grid-row: 2/4;
+    width: 8em;
     font-size: 5em;
-    width: 6em;
     display: flex;
-    justify-items: start;
-    align-items: end;
+    /*justify-items: end;*/
+    align-items: center;
 }
 
 #photo {
-    grid-column: 3/5;
+    grid-column: 3/6;
     grid-row: 2/6;
     background-image: url("../img/portfolio.png");
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    justify-items: end;
-    align-items: end;
+    background-position: right;
 }
