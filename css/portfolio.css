@@ -17,7 +17,7 @@ body {
 }
 
 .theGrid {
-    /*border: 1px solid black;*/
+    border: 1px solid black;
 }
 
 nav {
@@ -27,6 +27,15 @@ nav {
     writing-mode: tb-rl;
     transform: rotate(180deg);
 }
+
+.navItem{
+    display: flex;
+    align-items:start;
+    border: 1px solid black;
+
+}
+
+
 
 #nameWrap {
     grid-row: 1/4;
@@ -75,7 +84,7 @@ nav {
 }
 
 #photo {
-    grid-column: 3/6;
+    grid-column: 3/5;
     grid-row: 2/6;
     background-image: url("../img/portfolio.png");
     background-size: contain;
