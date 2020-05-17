@@ -27,17 +27,18 @@ nav {
     grid-row: 1/2;
     font-size: 2em;
     writing-mode: tb-rl;
-    transform: rotate(-180deg);
-    margin-bottom: .5em;
+    transform: rotate(360deg);
+    margin: .1em .5em;
+    border-top: 8px solid #305252;
 }
 
 .navItem{
-    display: flex;
-    align-items:start;
     padding-left: .3em;
     padding-right: .2em;
+    padding-top: .2em;
     align-self: flex-end;
-    /*text-decoration-line: underline;*/
+    text-decoration-color: #305252;
+    text-decoration-width: 1px;
 }
 
 .navItem:hover{
@@ -70,11 +71,14 @@ nav {
     letter-spacing: .2em;
     line-height: .2em;
     padding-left: 1em;
+    text-decoration-line: underline;
+    text-decoration-color: #305252;
 }
 
 .firstLetter{
     color: #305252;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 #lastName{
@@ -86,6 +90,8 @@ nav {
     letter-spacing: .2em;
     line-height: 1em;
     padding-left: 1em;
+    text-decoration-line: underline;
+    text-decoration-color: #305252;
 }
 
 #title {
