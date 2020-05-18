@@ -43,9 +43,9 @@ nav {
 
 .navItem:hover{
     background-color: #305252;
-    font-size: 1.1em;
+    /*font-size: 1.1em;*/
     color: white;
-    padding: .1em;
+    /*padding: .1em;*/
     /*text-decoration-line: underline;*/
 }
 
