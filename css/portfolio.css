@@ -36,7 +36,7 @@ nav {
     text-decoration-width: 1px;
 }
 
-.navItem a:hover{
+.navItem:hover{
     background-color: #305252;
     font-size: 1.1em;
     color: white;
@@ -47,6 +47,11 @@ nav {
 .navItem p, a{
     text-decoration: none;
     color: #000;
+}
+
+#home {
+    background-color: #305252;
+    color: #fff;
 }
 
 #nameWrap {
