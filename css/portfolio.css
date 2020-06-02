@@ -15,6 +15,7 @@ body {
     grid-template-rows: repeat(5, 1fr);
     width: 98.5vw;
     height: 100vh;
+    /*transform: rotate(180deg);*/
 }
 
 .navItem p, a{
