@@ -36,7 +36,7 @@ nav {
 }
 
 .navItem:hover{
-    background-color: #305252;
+    background-color: #658585;
     font-size: 1.1em;
     color: white;
     padding: .1em;
@@ -50,6 +50,9 @@ nav {
 
 #resume {
     background-color: #305252;
+    color: #fff;
+}
+#resume a{
     color: #fff;
 }
 

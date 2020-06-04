@@ -38,12 +38,12 @@ nav {
     padding-right: .2em;
     padding-top: .2em;
     align-self: flex-end;
-    text-decoration-color: #305252;
-    text-decoration-width: 1px;
+    /*text-decoration-color: #305252;*/
+    /*text-decoration-width: 1px;*/
 }
 
 .navItem:hover{
-    background-color: #305252;
+    background-color: #658585;
     /*font-size: 1.1em;*/
     color: white;
     /*padding: .1em;*/
@@ -52,6 +52,9 @@ nav {
 
 #home {
     background-color: #305252;
+    color: #fff;
+}
+#home a{
     color: #fff;
 }
 
@@ -67,6 +70,7 @@ nav {
     width: 2em;
     height: 100vh;
 }
+
 #firstName{
     grid-row: 1/4;
     grid-column: 1/2;
