@@ -22,7 +22,7 @@ nav {
     font-size: 2em;
     writing-mode: tb-rl;
     transform: rotate(360deg);
-    margin: .1em .5em;
+    margin: .1em -.5em;
     border-top: 8px solid #305252;
 }
 
@@ -57,6 +57,14 @@ nav {
     color: #fff;
 }
 
+#fill{
+    background-color: #305252;
+    width: .5em;
+}
+#fill:hover{
+    width: .5em;
+}
+
 #nameWrap {
     grid-row: 1.5/4;
     grid-column: 1/2;
@@ -69,19 +77,6 @@ nav {
     width: 2em;
     height: 100vh;
 }
-/*#firstName{*/
-/*    grid-row: 1/4;*/
-/*    grid-column: 1/2;*/
-/*    transform: rotate(-90deg);*/
-/*    display: flex;*/
-/*    align-items: start;*/
-/*    padding-bottom: .2em;*/
-/*    letter-spacing: .2em;*/
-/*    line-height: .2em;*/
-/*    padding-left: 1em;*/
-/*    text-decoration-line: underline;*/
-/*    text-decoration-color: #305252;*/
-/*}*/
 
 .firstLetter{
     color: #305252;

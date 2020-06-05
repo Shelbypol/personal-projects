@@ -22,7 +22,7 @@ nav {
     font-size: 2em;
     writing-mode: tb-rl;
     transform: rotate(360deg);
-    margin: .1em .5em;
+    margin: .1em -.5em;
     border-top: 8px solid #305252;
 }
 
@@ -53,6 +53,15 @@ nav {
 }
 #resume a{
     color: #fff;
+}
+
+#fill{
+    background-color: #305252;
+    width: .5em;
+}
+
+#fill:hover{
+    width: .5em;
 }
 
 #nameWrap {

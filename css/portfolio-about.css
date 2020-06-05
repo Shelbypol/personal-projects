@@ -40,7 +40,6 @@ nav {
     font-size: 1.1em;
     color: white;
     padding: .1em;
-    /*text-decoration-line: underline;*/
 }
 
 .navItem p, a{
@@ -61,6 +60,7 @@ nav {
     background-color: #305252;
     width: .5em;
 }
+
 #fill:hover{
     width: .5em;
 }
