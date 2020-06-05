@@ -19,7 +19,7 @@ body {
 nav {
     grid-column: 5/6;
     grid-row: 1/2;
-    font-size: 2em;
+    font-size: 1.6em;
     writing-mode: tb-rl;
     transform: rotate(360deg);
     margin: .1em -.5em;
@@ -30,16 +30,16 @@ nav {
     padding-left: .3em;
     padding-right: .2em;
     padding-top: .2em;
-    align-self: flex-end;
-    text-decoration-color: #305252;
-    text-decoration-width: 1px;
+    align-self: start;
+    /*text-decoration-color: #305252;*/
+    /*text-decoration-width: 1px;*/
 }
 
 .navItem:hover{
     background-color: #658585;
-    font-size: 1.1em;
+    /*font-size: 1.1em;*/
     color: white;
-    padding: .1em;
+    padding: .3em;
 }
 
 .navItem p, a{
@@ -94,7 +94,6 @@ nav {
     letter-spacing: .2em;
     line-height: 1em;
     margin-top: 1em;
-    padding-left: 1.2em;
     text-decoration-line: underline;
     text-decoration-color: #305252;
 }
