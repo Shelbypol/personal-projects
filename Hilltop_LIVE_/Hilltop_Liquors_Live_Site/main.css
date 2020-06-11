@@ -1,0 +1,302 @@
+body{
+	background-color: #fff;
+	color: black !important;
+	width: 100% !important;
+}
+
+/* HEADER/NAV */
+/* ======================================== */
+
+.navbar{
+	width: 100%;
+	background-color: rgba(0, 0, 0, .6);
+}
+
+h1 a.navbar-brand{
+	color: white !important; 
+	text-shadow: .5px 1.5px .5px black !important;
+	overflow: hidden;
+}
+
+h1 a.navbar-brand:hover{
+	color: firebrick !important;
+}
+
+.navbar .navbar-nav > .active > a{
+	color: white !important;
+}
+.navbar .navbar-nav > .active > a:hover{
+	color: white !important;
+}
+
+.nav>li>a {
+	font-size: 16px;
+	color: white;
+	text-shadow: 2px 2px 2px firebrick !important;
+}
+
+.nav>li>a:hover {
+    color: white !important;
+	background-color: rgba(0, 0, 0, .8) !important;
+}
+
+/* important messes up the nav sticky color */
+.navbar {
+	background-color: rgba(0, 0, 0, .75);
+}
+
+.navbar-collapse{
+	overflow-x: hidden !important;
+}
+
+/*   CAROUSEL CONTROLS-
+ ========================== */
+
+.carousel-inner .item{
+	background-attachment: scroll !important;
+}
+
+.carousel-caption h2{
+	font-size: 80px !important;
+	text-shadow: 4px 4px 4px rgba(0, 0, 0, 1) !important;
+}
+
+.carousel-caption p { 
+	background: rgba(0, 0, 0, .6) !important;
+	text-shadow: 1px 1px 0 rgba(128, 0, 0, 1) !important;
+}
+
+#slide-2{
+	text-transform: lowercase !important;
+	background-color: rgb(0, 0, 0, .5) !important;
+	text-shadow: 1.5px 1.5px 1.5px rgba(0, 0, 0, 1) !important;
+	/* margin-top: 10% !important; */
+}
+
+#carousel-slider a i{
+	background-color: rgba(255, 255, 255,1) !important;
+	color: black !important;
+}
+
+#carousel-slider a i:hover{
+	background-color: rgba(255, 255, 255, 1) !important ;
+	color: black !important;
+}
+
+.carousel-inner .form-inline .form-group a] {
+	background-color: #3b5998 !important;
+	text-transform: lowercase !important;
+	text-decoration: none !important;
+	color: white !important;
+	font-size: 16px !important;
+}
+
+.carousel-inner .form-inline .form-group a:hover{
+	cursor: pointer !important;
+	background-color: white !important;
+	color: #3b5998 !important;
+	font-weight: bold !important;
+}
+
+ .btn-lg{
+	background-color: #3b5998 !important;
+	color: white !important;
+	padding: 20px 26px !important;
+} 	
+
+
+/*   SECTION SLIDER
+ ========================== */
+
+#span{
+	color: firebrick !important;
+}
+
+ .slide-body .img-responsive{
+ 	width: 100% !important;
+ 	height: 350px !important;
+    object-fit: cover !important;
+ }
+
+ /*  TASTINGS/PROMOS
+ ========================== */
+ #testimonials-1{
+ 	background-image: url("img/sutter.jpg") !important;
+ 	background-repeat: repeat !important;
+ 	 }
+
+ .testimonial {
+ 	margin-top: -70px !important;
+ }
+
+ .testimonial h5{
+ 	font-size: 28px !important;
+ 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1) !important;
+ 	background-color: rgb(0, 0, 0, .3) !important; 
+ }
+
+ .testimonial .author{
+ 	font-size: 16px !important;
+ }
+
+/* <!CARD ONE
+========================== */
+.card-container .row{
+	display: flex !important;
+	justify-content: space-around !important;
+	flex-wrap: wrap !important;
+	width: 100% !important;
+	margin: auto !important;
+} 
+
+.card {
+    font-size: 1em !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    border: none !important;
+    border-radius: .28571429rem !important;
+    box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5 !important;
+    color: black !important;
+    height: 100% !important;
+
+}
+
+.rotate{
+	image-orientation: 90deg;
+}
+
+.card-block {
+    font-size: 1em !important;
+    position: relative !important;
+    margin: 0 !important;
+    padding: 1em !important;
+    border: none !important;
+    border-top: 1px solid rgba(34, 36, 38, .1) !important;
+    box-shadow: none !important;
+}
+
+.card-img-top {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover !important; 
+}
+
+.card-text {
+    clear: both !important;
+    margin-top: .5em !important;
+}
+
+.card-footer {
+    font-size: 1em;
+    position: static;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    padding: .75em 1em;
+    color: rgba(0, 0, 0, .4);
+    border-top: 1px solid rgba(0, 0, 0, .05) !important;
+    background: #fff;
+}
+
+.card-inverse .btn {
+    border: 1px solid rgba(0, 0, 0, .05);
+}
+
+.text-bold {
+    font-weight: 700;
+}
+
+/* Delivery Testimonial */
+/*  TASTINGS/PROMOS
+ ========================== */
+ #testimonials-1{
+ 	background-image: url("img/sutter.jpg") !important;
+ 	background-repeat: repeat !important;
+ 	 }
+
+ .testimonial {
+ 	margin-top: -70px !important;
+ }
+
+ .testimonial h5{
+ 	font-size: 28px !important;
+ 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1) !important;
+ 	background-color: rgb(0, 0, 0, .3) !important; 
+ }
+
+ .testimonial .author{
+ 	font-size: 16px !important;
+ }
+
+.company p{
+	line-height: 1.4;
+}
+
+/* TEAM */
+.team-member .profile-picture img{
+	width: 240px !important;
+	height: 240px !important;
+}
+
+.section-header a:hover{
+	color: blue !important;
+	background-color: #fff !important;
+	border: 1px solid blue !important;
+}
+
+/* CONTACT FORM 
+===================*/
+#section-contact{
+	margin-top: -4% !important;
+}
+
+.contact-form{
+	padding-top: 6% !important;
+}
+
+.center {
+	text-align: center !important;
+}
+
+#contact-form input[type=submit]{
+	background-color: firebrick !important ;
+}
+
+#email{
+	text-decoration: underline !important;
+}
+
+/* FOOTER ====================*/
+#footer{
+	color: #fff !important;
+}
+
+#foot{
+	color: white !important;
+	text-shadow: 0px 1px 0 firebrick !important;
+	letter-spacing: 2px;
+}
+
+
+.social-network .icoRss{
+	background-color: firebrick !important;
+}
+
+
+.social-network .icoFacebook{
+	background-color: #3b5998 !important;
+}
+
+
+
+/* BACK TO TOP */
+a.scrollup{
+	right: 15px !important;
+	background-color: firebrick !important;
+}
+
+/* @media (max-width: 767px)
+.carousel-caption p {
+    background-color: rgb(0, 0, 0, .6) !important;
+} */
