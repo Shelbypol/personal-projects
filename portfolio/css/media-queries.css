@@ -7,7 +7,7 @@
     body {
         background-color: #f4f4f4;
         contain: content;
-        width: 97vw;
+        width: 100%;
         height: auto;
     }
 
@@ -17,37 +17,35 @@
         padding: 0;
     }
 
-    .mobileContainer{
+    /*-------------------NAVBAR & TITLE CONTAINER-*/
+    #mobileContainer {
         display: flex;
+        width: 100%;
     }
 
+    /*-------------------NAVBAR-*/
     .navMobile {
-        /*grid-column: 5/6;*/
-        /*grid-row: 1/2;*/
         font-size: 2em;
         float: right;
         writing-mode: bt-lr;
         transform: rotate(360deg);
-        /*margin;*/
         border-left: 8px solid #305252;
         padding-left: .5em;
+        width: 30%;
     }
 
     .navMobileItem {
-        /*margin-bottom: 1em;*/
-        /*padding-left: 1em;*/
-        padding: .6em;
+        padding: .6em .6em .6em .2em;
         text-align: center;
     }
 
-    .navMobileItem:hover{
+    .navMobileItem:hover {
         background-color: #658585;
-        /*font-size: 1.1em;*/
         color: white;
 
     }
 
-    .navMobileItem a:hover{
+    .navMobileItem a:hover {
         text-underline: none;
         text-decoration: none;
     }
@@ -56,26 +54,30 @@
         margin-top: .5em;
     }
 
-    #titleMobile{
-        /*color: #305252;*/
+    /*-----------------------------TITLE-*/
+    #titleMobile {
         font-weight: bold;
         font-size: 2em;
-        float: left;
         text-align: left;
-        padding-right: 4em;
+        padding-right: 3em;
+        width: 50%;
+        margin: 0 auto;
         align-self: center;
-        margin-left:.2em;
+
     }
-    .quote{
+
+    .quote {
         float: left;
         font-size: .5em;
-        /*padding-right:4em;*/
         text-align: left;
     }
+
+    #resumeBtn {
+        width: 100vw;
+        height: 50vh;
+        background-color: #305252;
+    }
 }
-
-
-
 
 
 /*!*Medium devices (tablets, 768px and up)*!*/
