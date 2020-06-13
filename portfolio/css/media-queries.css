@@ -3,7 +3,7 @@
 /*Extra small devices (portrait phones, less than 576px)*/
 
 /*Small devices (landscape phones, 576px and up)*/
-@media screen and (min-width: 300px) and (max-width: 1000px) {
+@media screen and (min-width: 300px) {
     body {
         background-color: #f4f4f4;
         contain: content;
@@ -30,18 +30,21 @@
         transform: rotate(360deg);
         /*margin;*/
         border-left: 8px solid #305252;
+        padding-left: .5em;
     }
 
     .navMobileItem {
         /*margin-bottom: 1em;*/
-        padding-bottom: 1em;
+        /*padding-left: 1em;*/
+        padding: .6em;
+        text-align: center;
     }
 
     .navMobileItem:hover{
         background-color: #658585;
         /*font-size: 1.1em;*/
         color: white;
-        /*padding: .3em;*/
+
     }
 
     .navMobileItem a:hover{
