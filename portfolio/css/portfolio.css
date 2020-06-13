@@ -27,6 +27,7 @@ nav {
     transform: rotate(360deg);
     margin: .1em -.5em;
     border-top: 8px solid #305252;
+    font-weight: lighter;
 }
 
 .navItem {
