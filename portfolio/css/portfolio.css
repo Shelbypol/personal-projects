@@ -129,6 +129,7 @@ nav {
     font-size: 5em;
     display: flex;
     align-items: center;
+    font-weight: lighter;
 }
 
 #photo {
@@ -139,6 +140,26 @@ nav {
     background-repeat: no-repeat;
     background-position: right;
 
+}
+
+.cardsProjects{
+    border: none;
+}
+
+.card{
+    width: 60%;
+    height: 20%;
+    transform: rotate(-90deg);
+}
+
+.card-title{
+    transform: rotate(-90deg);
+}
+
+.card-body{
+    /*width: 100%;*/
+    transform: rotate(90deg);
+    height: 100%;
 }
 
 /*End Landing Page Wrapper*/
