@@ -3,39 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <title>Shelby Polasek : Welcome</title>
-    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <!--  Font Awesome  -->
     <script src="https://kit.fontawesome.com/c6a341846b.js" crossorigin="anonymous"></script>
+    <!--  Bootstrap  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 <body>
 
 <!--Landing Page Wrapper-->
 <main class="mainWrapper">
-    <nav>
-        <p class="navItem" id="fill"></p>
-        <p class="navItem" id="linkedin"><a href="https://www.linkedin.com/in/shelby-polasek/" target="_blank"><i
-                class="fab fa-linkedin"></i></a></p>
-        <p class="navItem" id="github"><a href="https://github.com/Shelbypol" target="_blank"><i
-                class="fab fa-github-square"></i></a></p>
-        <p class="navItem" id="contact"><a href="portfolio-contact.html">contact</a></p>
-        <p class="navItem" id="projects"><a href="portfolio-projects.html">projects</a></p>
-        <p class="navItem" id="resume"><a href="portfolio-resume.html">resume&#769;</a></p>
-        <p class="navItem" id="about"><a href="portfolio-about.html">about</a></p>
-        <p class="navItem" id="home"><a href="portfolio.html">home</a></p>
-    </nav>
+        <nav class="d-none d-lg-block">
+            <p class="navItem" id="fill"></p>
+            <p class="navItem" id="linkedin"><a href="https://www.linkedin.com/in/shelby-polasek/" target="_blank"><i
+                    class="fab fa-linkedin"></i></a></p>
+            <p class="navItem" id="github"><a href="https://github.com/Shelbypol" target="_blank"><i
+                    class="fab fa-github-square"></i></a></p>
+            <p class="navItem" id="contact"><a href="portfolio-contact.html">contact</a></p>
+            <p class="navItem" id="projects"><a href="portfolio-projects.html">projects</a></p>
+            <p class="navItem" id="resume"><a href="portfolio-resume.html">resume&#769;</a></p>
+            <p class="navItem" id="about"><a href="portfolio-about.html">about</a></p>
+            <p class="navItem" id="home"><a href="portfolio.html">home</a></p>
+        </nav>
+
 
     <div id="nameWrap">
         <p id="firstName"><span class="firstLetter">s</span>helby</p>
         <p id="lastName"><span class="firstLetter">p</span>olasek</p>
     </div>
 
-    <div class="theGrid" id="title">Junior <br>Web Developer</div>
-    <div class="theGrid" id="photo"></div>
+    <div class="theGrid title d-none d-lg-block" id="title">Junior <br>Web Developer</div>
+    <div class="theGrid photo d-none d-lg-block" id="photo"></div>
 
 </main>
 <!--End Landing Page Wrapper-->
 
 
-<script src="../js/jquery-2.2.4.js"></script>
-<script src="portfolio.js"></script>
+<!--Media-->
+    <div class="d-lg-none d-xl-none" id="titleMobile"><span class="firstLetter">J</span>unior <br><span class="firstLetter">W</span>eb <span class="firstLetter">D</span>eveloper</div>
+    <p class="d-lg-none d-xl-none">Let's create art that inspires.</p>
+
+
+
+<!--<script src="../js/jquery-2.2.4.js"></script>-->
+<script src="js/portfolio.js"></script>
+<!--Bootstrap-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
 </body>
 </html>

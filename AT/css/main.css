@@ -1,0 +1,181 @@
+body{
+	margin: auto;
+	width: 100%;
+	font-size: 16px;
+	background-color: #2b3518;
+}
+
+header{
+	z-index: 2;
+	width: 100%;
+	height: 2em;
+	background-color: #a46c44;
+	color: white;
+	position: fixed;
+	border-bottom: 1px solid #2b3518;
+}
+
+header h1{
+	margin-left: 1.5em;
+	margin-top: .1em;
+	padding: .5em;
+	border-radius: 50px 2px;
+	border-bottom: 4px solid #a46c44;
+	text-shadow: 2px 3px #a46c44;
+}
+
+header h1, li{
+	font-family: Allerta Stencil;
+	position: relative;
+	background-color:  #2b3518;
+	text-align: center;
+	display: inline;
+}
+
+nav{
+	align-content: center;
+	width: 99.9%;
+}
+
+nav ul{
+	margin-left: 50em;
+	margin-top: -1.2em;
+}
+
+nav li{
+	display: inline;
+	margin-left: 1em;
+	padding: .3em;
+	font-size: 18px;
+	border-radius: 10px 2px;
+	border-bottom: 3px solid #a46c44;
+	border-right: 3px solid #a46c44;
+	text-shadow: 1px 1px #000000;
+}
+
+nav li:hover{
+	font-size: 20px;
+	text-shadow: 2px 3px #2b3518;
+}
+
+.column{
+	margin-top: 2.2em;
+	width: 100%;
+	border-top: 3px solid #2b3518;
+}
+
+.column.side{
+	float: left;
+	z-index: 1;
+	width: 25em;
+	position: relative;
+}
+
+.side img{
+	width: 25em;
+	opacity: .9;
+	border-right: 3px solid #2b3518;
+}
+
+.column.main{
+	float: left;
+	z-index: -1;
+	width: 84.3em;
+	position: absolute;
+}
+
+.main h3{
+	position: absolute;
+	font-family: Allerta Stencil;
+	font-size: 45px;
+	color: #ffffff;
+	margin-left: 9.2em;
+	margin-top: 4em;
+	text-shadow: 4px 3px #000000;
+	background-color: rgb(0,0,0,.4);
+	padding: .2em .5em .2em .5em;
+}
+
+.main img{
+	width: 84.3em;
+	height: 37.2em;
+}
+
+.clear{
+	clear: both;
+}
+
+#bar{
+	position: absolute;
+	margin-top: 39.5em;
+	margin-left: 25em;
+	margin-bottom: .5em;
+	background-color: #a46c44;
+	height: 1em;
+	width: 59.3em;
+	border-bottom: 2px solid #2b3518;
+}
+
+
+.col{
+	margin-left: 26em;
+	margin-top: 42em;
+	padding: .5em;
+	background-color: rgb(164, 108, 68, .5);
+	color: #ffffff;
+	height: 10em;
+	width: 58em;
+	position: absolute;
+}
+
+.col h2{
+	font-family: Allerta Stencil;
+	background-color:  #2b3518;
+	padding: .2em;
+	text-shadow: 1px 2px #000000;
+}
+
+.col2{
+	margin-top: 2em;
+	margin-left: -.5em;
+	padding: .5em;
+	background-color: rgb(164, 108, 68, .5);
+	color: #ffffff;
+	position: absolute;
+	height: 60em;
+	width: 16em;
+	text-align: center;
+}
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    margin-top: 2em;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+    margin-top: 2em;
+    color: white;
+    background-color: #2b3518;
+    width: 15em;
+
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+     margin-left: -60px;
+     margin-left: -9.5em;
+     align-self: center;
+}
