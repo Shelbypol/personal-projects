@@ -1,5 +1,6 @@
 body {
     background-color: #f4f4f4;
+    contain: content;
 }
 
 * {
@@ -18,22 +19,13 @@ body {
     /*transform: rotate(180deg);*/
 }
 
-/*.hidden{*/
-/*    visibility:visible ;*/
-/*}*/
-
-.navItem p, a {
-    text-decoration: none;
-    color: #000;
-}
-
 nav {
     grid-column: 5/6;
     grid-row: 1/2;
     font-size: 1.6em;
     writing-mode: tb-rl;
     transform: rotate(360deg);
-    margin: .1em .5em;
+    margin: .1em -.5em;
     border-top: 8px solid #305252;
 }
 
@@ -41,7 +33,7 @@ nav {
     padding-left: .3em;
     padding-right: .2em;
     padding-top: .2em;
-    align-self: flex-end;
+    align-self: start;
     /*text-decoration-color: #305252;*/
     /*text-decoration-width: 1px;*/
 }
@@ -50,8 +42,18 @@ nav {
     background-color: #658585;
     /*font-size: 1.1em;*/
     color: white;
-    /*padding: .1em;*/
+    padding: .3em;
     /*text-decoration-line: underline;*/
+}
+
+.navItem a:hover{
+    text-underline: none;
+    text-decoration: none;
+}
+
+.navItem p, a{
+    text-decoration: none;
+    color: #000;
 }
 
 #home {
@@ -62,6 +64,7 @@ nav {
 #home a {
     color: #fff;
 }
+
 
 #fill {
     background-color: #305252;
@@ -134,6 +137,7 @@ nav {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
+
 }
 
 /*End Landing Page Wrapper*/

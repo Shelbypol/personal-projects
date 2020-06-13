@@ -3,7 +3,7 @@
 /*Extra small devices (portrait phones, less than 576px)*/
 
 /*Small devices (landscape phones, 576px and up)*/
-@media (max-width: 768px) {
+@media screen and (min-width: 300px) and (max-width: 1000px) {
     body {
         background-color: #f4f4f4;
         contain: content;
@@ -21,11 +21,6 @@
         display: flex;
     }
 
-    .navItem p, a {
-        text-decoration: none;
-        color: #000;
-    }
-
     .navMobile {
         /*grid-column: 5/6;*/
         /*grid-row: 1/2;*/
@@ -34,11 +29,24 @@
         writing-mode: bt-lr;
         transform: rotate(360deg);
         /*margin;*/
-        border-top: 8px solid #305252;
+        border-left: 8px solid #305252;
     }
 
-    .navItem {
-        margin-bottom: 1em;
+    .navMobileItem {
+        /*margin-bottom: 1em;*/
+        padding-bottom: 1em;
+    }
+
+    .navMobileItem:hover{
+        background-color: #658585;
+        /*font-size: 1.1em;*/
+        color: white;
+        /*padding: .3em;*/
+    }
+
+    .navMobileItem a:hover{
+        text-underline: none;
+        text-decoration: none;
     }
 
     #nameWrap {
@@ -59,7 +67,7 @@
         float: left;
         font-size: .5em;
         /*padding-right:4em;*/
-        text-align: right;
+        text-align: left;
     }
 }
 
@@ -73,11 +81,11 @@
 /*}*/
 
 /*!*Large devices (desktops, 992px and up)*!*/
-@media (min-width: 992px) {
-    .hidden{
-        visibility: visible;
-    }
-}
+/*@media (min-width: 992px) {*/
+/*    .hidden{*/
+/*        visibility: visible;*/
+/*    }*/
+/*}*/
 
 /*!*Extra large devices (large desktops, 1200px and up)*!*/
 /*@media (min-width: 1200px) {*/
