@@ -142,6 +142,13 @@ nav {
 
 }
 
+/*Typing Animation*/
+.typingAnimation{
+    width: 100%;
+    /*margin-top: -3em;*/
+    transform: rotate(90deg);
+}
+
 .cardsProjects{
     border: none;
 }
