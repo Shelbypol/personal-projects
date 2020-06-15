@@ -144,15 +144,15 @@ nav {
 
 /*Typing Animation*/
 .typingAnimation{
-    width: 100%;
-    /*height: 20vh;*/
-    border: 2px solid red;
-    display: flex;
+    /*transform: rotate(90deg);*/
+    width: 100vw;
+    height: 50vh;
+    border: 2px solid black;
+    contain: content;
 }
 
 .fizz{
     margin-top: 3em;
-    transform: rotate(90deg);
     width: 20%
 }
 
@@ -176,7 +176,7 @@ nav {
 }
 
 .ml12 .letter {
-    display: inline-block;
+    /*display: inline-block;*/
     line-height: 1em;
 }
 
