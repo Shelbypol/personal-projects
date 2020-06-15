@@ -145,8 +145,39 @@ nav {
 /*Typing Animation*/
 .typingAnimation{
     width: 100%;
-    /*margin-top: -3em;*/
+    /*height: 20vh;*/
+    border: 2px solid red;
+    display: flex;
+}
+
+.fizz{
+    margin-top: 3em;
     transform: rotate(90deg);
+    width: 20%
+}
+
+#fizz{
+    margin: 0 auto;
+}
+
+#buzz {
+    margin-left: 4em;
+}
+
+#fizzBuzz {
+    margin: 2em;
+}
+
+.ml12 {
+    font-weight: 200;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+}
+
+.ml12 .letter {
+    display: inline-block;
+    line-height: 1em;
 }
 
 .cardsProjects{
