@@ -16,6 +16,7 @@ body {
     grid-template-rows: repeat(5, 1fr);
     width: 100%;
     height: 100vh;
+    margin-bottom: -30%;
     /*transform: rotate(180deg);*/
 }
 
@@ -144,39 +145,28 @@ nav {
 
 /*Typing Animation*/
 .typingAnimation{
-    /*transform: rotate(90deg);*/
-    width: 100vw;
-    height: 50vh;
-    border: 2px solid black;
+    /*border: 2px solid black;*/
     contain: content;
-}
-
-.fizz{
-    margin-top: 3em;
-    width: 20%
-}
-
-#fizz{
+    transform: rotate(90deg);
+    height: 90vw;
+    width: 50vh;
+    /*margin-top: -5vh;*/
     margin: 0 auto;
-}
-
-#buzz {
-    margin-left: 4em;
-}
-
-#fizzBuzz {
-    margin: 2em;
+    padding: 0;
+    line-height: 2em;
 }
 
 .ml12 {
-    font-weight: 200;
     font-size: 1.8em;
     text-transform: uppercase;
     letter-spacing: 0.5em;
+    word-spacing: 4em;
+    /*margin-top: -70%;*/
 }
 
 .ml12 .letter {
-    /*display: inline-block;*/
+    font-weight: lighter;
+    display: inline-block;
     line-height: 1em;
 }
 
