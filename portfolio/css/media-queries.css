@@ -19,6 +19,7 @@
 
     /*-------------------NAVBAR & TITLE CONTAINER-*/
     #mobileContainer {
+        margin-top: 25vh;
         display: flex;
         width: 100%;
     }
@@ -56,6 +57,7 @@
     }
 
     /*-----------------------------TITLE-*/
+
     #titleMobile {
         font-weight: bold;
         font-size: 2em;

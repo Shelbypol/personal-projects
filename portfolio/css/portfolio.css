@@ -217,12 +217,23 @@ nav {
     padding: 0;
     /*transform: scaleY(1);*/
 }
-
-.hilltopProject{
-    width: 25vw;
+.projects  {
+    display: flex;
+    width: 100%;
     height: 100vh;
-    background-image: url("../img/HilltopImg.png");
-    margin-top: 12vh;
+    border: 2px solid red;
+    contain: content;
+}
+
+#hilltopProject{
+    contain: content;
+    width: 100vh;
+    height: 25vw;
+    background-image: url("../img/hilltopImg.png");
+    background-repeat: no-repeat;
+    /*margin-top: 50vh;*/
+    transform: rotate(90deg);
+    /*float: right;*/
 }
 
 
