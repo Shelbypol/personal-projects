@@ -218,26 +218,33 @@ nav {
     /*transform: scaleY(1);*/
 }
 
-
-.cardsProjects{
-    border: none;
+.hilltopProject{
+    width: 25vw;
+    height: 100vh;
+    background-image: url("../img/HilltopImg.png");
+    margin-top: 12vh;
 }
 
-.card{
-    width: 60%;
-    height: 20%;
-    transform: rotate(-90deg);
-}
 
-.card-title{
-    transform: rotate(-90deg);
-}
+/*.cardsProjects{*/
+/*    border: none;*/
+/*}*/
 
-.card-body{
-    /*width: 100%;*/
-    transform: rotate(90deg);
-    height: 100%;
-}
+/*.card{*/
+/*    width: 60%;*/
+/*    height: 20%;*/
+/*    transform: rotate(-90deg);*/
+/*}*/
+
+/*.card-title{*/
+/*    transform: rotate(-90deg);*/
+/*}*/
+
+/*.card-body{*/
+/*    !*width: 100%;*!*/
+/*    transform: rotate(90deg);*/
+/*    height: 100%;*/
+/*}*/
 
 /*End Landing Page Wrapper*/
 
