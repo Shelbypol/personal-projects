@@ -162,19 +162,25 @@
         opacity: .7;
         float: left;
         height: 50%;
+        border-right: .5em solid #305252;
     }
 
-    #Capstone{
+    #capstone{
         background-image: url("../img/AltiDND.jpg");
         float: left;
         height: 60%;
+        margin-top: 40vh;
+
+        border-left: .5em solid #305252;
     }
 
     #adLister{
         background-image: url("../img/at-zoom2.jpg");
         float: left;
-        height: 70%;
-        /*margin-top: 15vh;*/
+        height: 65%;
+        margin-top: 20vh;
+        border-right: .5em solid #305252;
+
     }
 
 
