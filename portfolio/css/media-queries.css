@@ -80,7 +80,8 @@
          width: 100vw;
          height: 60vh;
          background-color: #305252;
-         margin-top: 25%;
+         /*margin-top: 25%;*/
+         /*margin-bottom: 0;*/
          padding: 1em;
      }
 
@@ -121,55 +122,59 @@
     /*================== PROJECTS */
     .projects  {
         width: 100vw;
-        height: 150vh;
-        margin-top: 40vh;
+        height: 200vh;
+        margin-top: 30vh;
     }
 
-    .indProjects{
+    .indProjects {
         background-repeat: no-repeat;
         width: 33.33%;
-        transform: rotate(180deg);
+        contain: content;
+        border-right:2px solid white;
+        /*transform: rotate(180deg);*/
     }
 
-    /*#projectText{*/
-    /*    margin-bottom: -40vh;*/
-    /*    justify-items: center;*/
-    /*}*/
+    #projectText{
+        /*margin-bottom: -40vh;*/
+        justify-items: center;
+        width: 66.66%;
+    }
 
-    /*.projects h2{*/
-    /*    font-weight: lighter;*/
-    /*    font-size: 5em;*/
-    /*    writing-mode: vertical-rl;*/
-    /*}*/
-
-    .projects h3{
+    #projectText h2{
         font-weight: lighter;
+        font-size: 5em;
+        /*writing-mode: vertical-rl;*/
+    }
+
+    .projectTitle{
+        font-weight: lighter;
+        transform: rotate(180deg);
         color: white;
+        font-size: 5em;
         writing-mode: vertical-rl;
-        border: 2px solid red;
-        width: 100%;
-        height: 100%;
         text-align: center;
+        margin: 0 auto;
     }
 
     #hilltopProject{
         background-image: url("../img/hilltopImg.png");
+        background-color: white;
+        opacity: .7;
         float: left;
         height: 50%;
-        /*margin-top: 25vh;*/
     }
 
     #Capstone{
         background-image: url("../img/AltiDND.jpg");
         float: left;
-        height: 75%;
+        height: 60%;
     }
 
     #adLister{
         background-image: url("../img/at-zoom2.jpg");
         float: left;
-        height: 50%;
-        margin-top: 15vh;
+        height: 70%;
+        /*margin-top: 15vh;*/
     }
 
 
