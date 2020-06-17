@@ -174,58 +174,49 @@ nav {
     padding: 0;
 }
 
-/*================== PROJECTS */
-.projects  {
-    width: 100vw;
-    height: 150vh;
-    margin-top: 20vh;
-    /*border: 2px solid red;*/
-    /*contain: content;*/
-}
+/*!*================== PROJECTS *!*/
+/*.projects  {*/
+/*    width: 100vw;*/
+/*    height: 150vh;*/
+/*    margin-top: 10vh;*/
+/*}*/
 
-.indProjects{
-    background-repeat: no-repeat;
-    /*contain: content;*/
+/*.indProjects{*/
+/*    background-repeat: no-repeat;*/
+/*    width: 33.3%;*/
+/*    transform: rotate(180deg);*/
+/*}*/
 
-}
+/*#projectText{*/
+/*    margin-bottom: -40vh;*/
+/*    justify-items: center;*/
+/*}*/
 
-#projectText h2{
-    font-weight: lighter;
-    font-size: 5em;
-    /*margin: 0 auto;*/
-    /*border: 2px solid red;*/
-    width: 70%;
-    margin-bottom: 10vh;
-    height: 10%;
-}
+/*.projects h2{*/
+/*    font-weight: lighter;*/
+/*    font-size: 5em;*/
+/*    writing-mode: vertical-rl;*/
+/*}*/
 
-#hilltopProject{
-    width: 70%;
-    height: 50%;
-    background-image: url("../img/hilltopImg.png");
-    margin-top: 5vh;
-    float: left;
+/*#hilltopProject{*/
+/*    background-image: url("../img/hilltopImg.png");*/
+/*    float: left;*/
+/*    height: 50%;*/
+/*    margin-top: 25vh;*/
+/*}*/
 
-}
+/*#Capstone{*/
+/*    background-image: url("../img/AltiDND.jpg");*/
+/*    float: left;*/
+/*    height: 75%;*/
+/*}*/
 
-#Capstone{
-    width: 29%;
-    height: 100%;
-    margin-top: 45vh;
-    background-image: url("../img/AltiDND.jpg");
-    float: right;
-}
-
-#adLister{
-    width: 25%;
-    height: 75%;
-    background-image: url("../img/at-zoom2.jpg");
-    margin-top: 5vh;
-    float: left;
-}
-
-
-
+/*#adLister{*/
+/*    background-image: url("../img/at-zoom2.jpg");*/
+/*    float: left;*/
+/*    height: 50%;*/
+/*    margin-top: 15vh;*/
+/*}*/
 
 
 /*End Landing Page Wrapper*/
