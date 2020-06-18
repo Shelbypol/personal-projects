@@ -134,26 +134,28 @@
         /*transform: rotate(180deg);*/
     }
 
-    #projectText{
-        /*margin-bottom: -40vh;*/
-        justify-items: center;
-        width: 66.66%;
+    .projectText{
+        /*border: 2px solid red;*/
     }
 
     #brokeText{
         transform: rotate(90deg);
-        border: 2px solid red;
         height: 6vh;
-        font-size: 2em;
+        font-size: 5em;
         width: 30vw;
-        margin-left: 20vh;
+        margin-left: 33vw;
         font-weight: lighter;
     }
 
-    #projectText h2{
+    #fallingText{
+        padding-left: .3em;
+        /*border: 2px solid red;*/
+    }
+
+    .projectText h2{
         font-weight: lighter;
         font-size: 5em;
-        /*writing-mode: vertical-rl;*/
+        margin-left: 6.2vh;
     }
 
     .projectTitle{
@@ -168,11 +170,13 @@
 
     #hilltopProject{
         background-image: url("../img/hilltopImg.png");
-        background-color: white;
+        /*background-color: white;*/
         opacity: .7;
         float: left;
         height: 50%;
-        /*border-right: .5em solid #305252;*/
+        margin-top: -8vh;
+        border-top: .5em solid #305252;
+        border-right: .5em solid #305252;
     }
 
     #capstone{
