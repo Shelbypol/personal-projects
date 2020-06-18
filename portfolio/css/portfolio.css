@@ -144,80 +144,35 @@ nav {
 }
 
 /*=================Typing Animation*/
-.animationContainer{
+/*.animationContainer{*/
 
-    writing-mode: vertical-rl;
-    margin: 0 auto;
-    /*transform: scaleX(-1);*/
-}
-
-.typingAnimation{
-    contain: content;
-    width: 100vw;
-    height: 40vh;
-    margin: 0 auto;
-    line-height: 2em;
-    display: block;
-}
-
-.ml13 {
-    font-size: 1.8em;
-    text-transform: uppercase;
-    letter-spacing: 0.5em;
-    word-spacing: 4em;
-}
-
-.ml13 .letter {
-    font-weight: lighter;
-    display: inline-block;
-    line-height: 1em;
-    padding: 0;
-}
-
-/*!*================== PROJECTS *!*/
-/*.projects  {*/
-/*    width: 100vw;*/
-/*    height: 150vh;*/
-/*    margin-top: 10vh;*/
-/*}*/
-
-/*.indProjects{*/
-/*    background-repeat: no-repeat;*/
-/*    width: 33.3%;*/
-/*    transform: rotate(180deg);*/
-/*}*/
-
-/*#projectText{*/
-/*    margin-bottom: -40vh;*/
-/*    justify-items: center;*/
-/*}*/
-
-/*.projects h2{*/
-/*    font-weight: lighter;*/
-/*    font-size: 5em;*/
 /*    writing-mode: vertical-rl;*/
+/*    margin: 0 auto;*/
+/*    !*transform: scaleX(-1);*!*/
 /*}*/
 
-/*#hilltopProject{*/
-/*    background-image: url("../img/hilltopImg.png");*/
-/*    float: left;*/
-/*    height: 50%;*/
-/*    margin-top: 25vh;*/
+/*.typingAnimation{*/
+/*    contain: content;*/
+/*    width: 100vw;*/
+/*    height: 40vh;*/
+/*    margin: 0 auto;*/
+/*    line-height: 2em;*/
+/*    display: block;*/
 /*}*/
 
-/*#Capstone{*/
-/*    background-image: url("../img/AltiDND.jpg");*/
-/*    float: left;*/
-/*    height: 75%;*/
+/*.ml13 {*/
+/*    font-size: 1.8em;*/
+/*    text-transform: uppercase;*/
+/*    letter-spacing: 0.5em;*/
+/*    word-spacing: 4em;*/
 /*}*/
 
-/*#adLister{*/
-/*    background-image: url("../img/at-zoom2.jpg");*/
-/*    float: left;*/
-/*    height: 50%;*/
-/*    margin-top: 15vh;*/
+/*.ml13 .letter {*/
+/*    font-weight: lighter;*/
+/*    display: inline-block;*/
+/*    line-height: 1em;*/
+/*    padding: 0;*/
 /*}*/
-
 
 /*End Landing Page Wrapper*/
 

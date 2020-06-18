@@ -3,7 +3,7 @@
 /*Extra small devices (portrait phones, less than 576px)*/
 
 /*Small devices (landscape phones, 576px and up)*/
-@media screen and (min-width: 300px)  {
+@media screen and (min-width: 300px) {
     body {
         background-color: #f4f4f4;
         contain: content;
@@ -17,14 +17,14 @@
         padding: 0;
     }
 
-    /*-------------------NAVBAR & TITLE CONTAINER-*/
+    /*================== NAVBAR & TITLE CONTAINER-*/
     #mobileContainer {
         margin-top: 25vh;
         display: flex;
         width: 100%;
     }
 
-    /*-------------------NAVBAR-*/
+    /*=================== NAVBAR-*/
     .navMobile {
         font-size: 2em;
         float: right;
@@ -44,7 +44,6 @@
     .navMobileItem:hover {
         background-color: #658585;
         color: white;
-
     }
 
     .navMobileItem a:hover {
@@ -56,8 +55,7 @@
         margin-top: .5em;
     }
 
-    /*-----------------------------TITLE-*/
-
+    /*======================== TITLE-*/
     #titleMobile {
         font-weight: bold;
         font-size: 2em;
@@ -66,7 +64,6 @@
         width: 50%;
         margin: 0 auto;
         align-self: center;
-
     }
 
     .quote {
@@ -75,89 +72,84 @@
         text-align: left;
         font-weight: lighter;
     }
-    /*---------------------RESUME*/
-     #resumeBtn  {
-         width: 100vw;
-         height: 60vh;
-         background-color: #305252;
-         /*margin-top: 25%;*/
-         /*margin-bottom: 0;*/
-         padding: 1em;
-     }
 
-     #resumeBtn a {
-         color: #fff;
-         font-weight: lighter;
-         text-decoration: none;
-         margin-left: 1em;
-     }
-
-     #resumeBtn h2{
-         display: inline-block;
-         font-weight: lighter;
-         color: white;
-         border-left: 2px solid white;
-         margin: 15%;
-         font-size: 3em;
-         width: 100%;
-         height: 50%;
-         padding-left:.2em;
-         float: left;
-     }
-
-    #span{
-        font-size: .4em;
-
+    /*======================== RESUME*/
+    #resumeBtn {
+        width: 100vw;
+        height: 60vh;
+        background-color: #305252;/
+        padding: 1em;
     }
 
-     #resumeBtn div{
-         background-color: white;
-         width: 7%;
-         height: 100vh;
-         margin-top: 2%;
-         margin-left: 1em;
-         padding-right: 1em;
-     }
+    #resumeBtn a {
+        color: #fff;
+        font-weight: lighter;
+        text-decoration: none;
+        margin-left: 1em;
+    }
+
+    #resumeBtn h2 {
+        display: inline-block;
+        font-weight: lighter;
+        color: white;
+        border-left: 2px solid white;
+        margin: 15%;
+        font-size: 3em;
+        width: 100%;
+        height: 50%;
+        padding-left: .2em;
+        float: left;
+    }
+
+    #span {
+        font-size: .4em;
+    }
+
+    #resumeBtn div {
+        background-color: white;
+        width: 7%;
+        height: 100vh;
+        margin-top: 2%;
+        margin-left: 1em;
+        padding-right: 1em;
+    }
 
     /*================== PROJECTS */
-    .projects  {
+    .projects {
         width: 100vw;
         height: 200vh;
-        margin-top: 15vh;
+        margin-top: 25vh;
     }
-
-    .projectText h2{
-             font-weight: lighter;
-             font-size: 5em;
-             margin-left: 6.2vh;
-         }
-
-    #brokeText{
+    /*======== PROJ */
+    .projectText h2 {
+        font-weight: lighter;
+        font-size: 5em;
+        margin-left: 8vh;
+        padding-bottom: .1em;
+    }
+    /*========= EJCTS */
+    #brokeText {
         transform: rotate(90deg);
         height: 6vh;
         font-size: 5em;
         width: 30vw;
-        margin-left: 33vw;
+        margin-left: 34.5vw;
         font-weight: lighter;
     }
-
-    #fallingText{
-        padding-left: .3em;
+    #fallingText {
+        padding-left: .2em;
         /*border: 2px solid red;*/
     }
 
-    /*========== IND PROJECT CONTAINERS */
+    /*=================== IND PROJECT CONTAINERS */
     .indProjects {
         background-repeat: no-repeat;
         width: 33.33%;
         contain: content;
-        border-right:2px solid white;
-        opacity: .8;
         float: left;
-        /*transform: rotate(180deg);*/
     }
 
-    .projectTitle{
+    .projectTitle {
         font-weight: lighter;
         transform: rotate(180deg);
         color: white;
@@ -166,10 +158,10 @@
         text-align: center;
         margin: 0 auto;
         background-color: #305252;
-        padding-top: 5vh;
+        padding-top: 10vh;
     }
 
-    #hilltopProject{
+    #hilltopProject {
         background-image: url("../img/hilltopImg.png");
         height: 50%;
         margin-top: -8vh;
@@ -177,13 +169,13 @@
         border-right: .5em solid #305252;
     }
 
-    #capstone{
+    #capstone {
         background-image: url("../img/AltiDND.jpg");
         height: 60%;
         margin-top: 40vh;
     }
 
-    #adLister{
+    #adLister {
         background-image: url("../img/at-zoom2.jpg");
         height: 65%;
         margin-top: 20vh;
@@ -191,7 +183,7 @@
         border-right: .5em solid #305252;
     }
 
-
+    /*========== IND PROJECT ON CLICK*/
 
 }
 
