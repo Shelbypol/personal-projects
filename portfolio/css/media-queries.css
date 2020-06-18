@@ -3,7 +3,7 @@
 /*Extra small devices (portrait phones, less than 576px)*/
 
 /*Small devices (landscape phones, 576px and up)*/
-@media screen and (max-width: 1200px) and (min-width: 300px)  {
+@media screen and (min-width: 300px)  {
     body {
         background-color: #f4f4f4;
         contain: content;
@@ -123,20 +123,14 @@
     .projects  {
         width: 100vw;
         height: 200vh;
-        margin-top: 30vh;
+        margin-top: 15vh;
     }
 
-    .indProjects {
-        background-repeat: no-repeat;
-        width: 33.33%;
-        contain: content;
-        border-right:2px solid white;
-        /*transform: rotate(180deg);*/
-    }
-
-    .projectText{
-        /*border: 2px solid red;*/
-    }
+    .projectText h2{
+             font-weight: lighter;
+             font-size: 5em;
+             margin-left: 6.2vh;
+         }
 
     #brokeText{
         transform: rotate(90deg);
@@ -152,10 +146,15 @@
         /*border: 2px solid red;*/
     }
 
-    .projectText h2{
-        font-weight: lighter;
-        font-size: 5em;
-        margin-left: 6.2vh;
+    /*========== IND PROJECT CONTAINERS */
+    .indProjects {
+        background-repeat: no-repeat;
+        width: 33.33%;
+        contain: content;
+        border-right:2px solid white;
+        opacity: .8;
+        float: left;
+        /*transform: rotate(180deg);*/
     }
 
     .projectTitle{
@@ -166,13 +165,12 @@
         writing-mode: vertical-rl;
         text-align: center;
         margin: 0 auto;
+        background-color: #305252;
+        padding-top: 5vh;
     }
 
     #hilltopProject{
         background-image: url("../img/hilltopImg.png");
-        /*background-color: white;*/
-        opacity: .7;
-        float: left;
         height: 50%;
         margin-top: -8vh;
         border-top: .5em solid #305252;
@@ -181,20 +179,16 @@
 
     #capstone{
         background-image: url("../img/AltiDND.jpg");
-        float: left;
         height: 60%;
         margin-top: 40vh;
-
-        /*border-left: .5em solid #305252;*/
     }
 
     #adLister{
         background-image: url("../img/at-zoom2.jpg");
-        float: left;
         height: 65%;
         margin-top: 20vh;
-        /*border-right: .5em solid #305252;*/
-        /*border-left: .5em solid #305252;*/
+        border-top: .5em solid #305252;
+        border-right: .5em solid #305252;
     }
 
 
