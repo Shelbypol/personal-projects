@@ -3,7 +3,7 @@
 /*Extra small devices (portrait phones, less than 576px)*/
 
 /*Small devices (landscape phones, 576px and up)*/
-@media screen and (min-width: 300px) {
+@media screen and (min-width: 300px) and (max-width: 575px){
     body {
         background-color: #f4f4f4;
         contain: content;
@@ -15,6 +15,56 @@
         box-sizing: border-box;
         margin: 0;
         padding: 0;
+    }
+
+    /*VERTICAL NAME*/
+    #nameWrap {
+        /*margin-top: .5em;*/
+        /*grid-row: 1/4;*/
+        grid-row: 1/2;
+        grid-column: 1/2;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        font-size: 5em;
+        margin-left: 1.5em;
+        /*justify-items: start;*/
+        justify-items: center;
+        width: 2em;
+        height: 100vh;
+    }
+
+    #firstName {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        transform: rotate(-90deg);
+        display: flex;
+        align-items: start;
+        padding-bottom: .2em;
+        letter-spacing: .2em;
+        line-height: .2em;
+        padding-left: 1em;
+        text-decoration-line: underline;
+        text-decoration-color: #305252;
+    }
+
+    .firstLetter {
+        color: #305252;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    #lastName {
+        grid-row: 2/2;
+        grid-column: 1/2;
+        transform: rotate(-90deg);
+        display: flex;
+        align-items: start;
+        letter-spacing: .2em;
+        line-height: 1em;
+        padding-left: 1em;
+        text-decoration-line: underline;
+        text-decoration-color: #305252;
     }
 
     /*================== NAVBAR & TITLE CONTAINER-*/
@@ -51,10 +101,6 @@
         text-decoration: none;
     }
 
-    #nameWrap {
-        margin-top: .5em;
-    }
-
     /*======================== TITLE-*/
     #titleMobile {
         font-weight: bold;
@@ -77,8 +123,8 @@
     #resumeBtn {
         width: 100vw;
         height: 60vh;
-        background-color: #305252;/
-        padding: 1em;
+        background-color: #305252;
+    / padding: 1 em;
     }
 
     #resumeBtn a {
@@ -120,6 +166,7 @@
         height: 200vh;
         margin-top: 25vh;
     }
+
     /*======== PROJ */
     .projectText h2 {
         font-weight: lighter;
@@ -127,6 +174,7 @@
         margin-left: 8vh;
         padding-bottom: .1em;
     }
+
     /*========= EJCTS */
     #brokeText {
         transform: rotate(90deg);
@@ -136,6 +184,7 @@
         margin-left: 34.5vw;
         font-weight: lighter;
     }
+
     #fallingText {
         padding-left: .2em;
         /*border: 2px solid red;*/
