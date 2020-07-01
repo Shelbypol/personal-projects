@@ -3,7 +3,7 @@
 /*Extra small devices (portrait phones, less than 576px)*/
 
 /*Small devices (landscape phones, 576px and up)*/
-@media only screen and (min-width: 0px) and (max-width: 767px){
+@media only screen and (min-width: 300px) and (max-width: 767px){
     body {
         background-color: #f4f4f4;
         contain: content;
@@ -20,30 +20,22 @@
     /*VERTICAL NAME*/
     #nameWrap {
         margin-top: 1em;
-        grid-row: 1/2;
-        grid-column: 1/2;
+        margin-left: -.2em;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
         font-size: 5em;
-        margin-left: 1.5em;
-        justify-items: start;
-        /*justify-items: center;*/
         width: 2em;
         height: 100vh;
     }
 
     #firstName {
+        margin-top: .5em;
         grid-row: 1/2;
-        /*grid-column: 1/2;*/
         transform: rotate(-90deg);
-        /*padding-top: -1em;*/
-        /*display: flex;*/
-        /*align-items: start;*/
         padding-bottom: .2em;
         letter-spacing: .2em;
         line-height: .2em;
-        /*padding-left: 1em;*/
         text-decoration-line: underline;
         text-decoration-color: #305252;
     }
@@ -57,15 +49,10 @@
     #lastName {
         grid-row: 2/3;
         grid-column: 1/2;
-        /*margin-left: 2em;*/
-        /*margin-top: 4em;*/
         transform: rotate(-90deg);
-        padding-right: 1em;
-        /*display: flex;*/
-        /*align-items: start;*/
+        padding-right: .5em;
         letter-spacing: .2em;
         line-height: 1em;
-        /*padding-left: 1em;*/
         text-decoration-line: underline;
         text-decoration-color: #305252;
     }
@@ -104,7 +91,7 @@
         text-decoration: none;
     }
 
-    /*======================== TITLE-*/
+    /*======================== TITLE */
     #titleMobile {
         font-weight: bold;
         font-size: 2em;
@@ -127,7 +114,8 @@
         width: 100vw;
         height: 60vh;
         background-color: #305252;
-    / padding: 1 em;
+        padding: 1em;
+        margin-top: 50vh;
     }
 
     #resumeBtn a {
@@ -167,15 +155,16 @@
     .projects {
         width: 100vw;
         height: 200vh;
-        margin-top: 25vh;
+        margin-top: 26vh;
     }
 
     /*======== PROJ */
     .projectText h2 {
         font-weight: lighter;
         font-size: 5em;
-        margin-left: 8vh;
+        margin-left: 37.6vh;
         padding-bottom: .1em;
+        margin-top: 2em;
     }
 
     /*========= EJCTS */
@@ -184,21 +173,23 @@
         height: 6vh;
         font-size: 5em;
         width: 30vw;
-        margin-left: 34.5vw;
+        margin-left: 81vw;
         font-weight: lighter;
     }
 
     #fallingText {
         padding-left: .2em;
-        /*border: 2px solid red;*/
     }
 
     /*=================== IND PROJECT CONTAINERS */
     .indProjects {
         background-repeat: no-repeat;
-        width: 33.33%;
-        contain: content;
+        height: 25%;
+        margin-top: 10em;
+        background-position: center;
         float: left;
+        width: 80%;
+        border-bottom: 10px solid #305252;
     }
 
     .projectTitle {
@@ -211,28 +202,21 @@
         margin: 0 auto;
         background-color: #305252;
         padding-top: 10vh;
+        height: 110%;
     }
 
     #hilltopProject {
-        background-image: url("../img/hilltopImg.png");
-        height: 50%;
-        margin-top: -8vh;
-        /*border-top: .1em solid #305252;*/
-        /*border-right: .5em solid #305252;*/
+        background-image: url("../img/HilltopProject.png");
+        margin-top: -3.8em;
+        float:left;
     }
 
     #capstone {
         background-image: url("../img/AltiDND.jpg");
-        height: 60%;
-        margin-top: 20vh;
     }
 
     #adLister {
         background-image: url("../img/at-zoom2.jpg");
-        height: 65%;
-        margin-top: 10vh;
-        /*border-top: .1em solid #305252;*/
-        /*border-right: .1em solid #305252;*/
     }
 
     /*========== IND PROJECT ON CLICK*/
