@@ -2,8 +2,8 @@
 
 /*Extra small devices (portrait phones, less than 576px)*/
 
-/*Small devices (landscape phones, 576px and up)*/
-@media only screen and (min-width: 300px) and (max-width: 767px){
+/*Small devices (landscape phones, 576px and up)767*/
+@media only screen and (min-width: 300px) and (max-width: 2000px){
     body {
         background-color: #f4f4f4;
         contain: content;
@@ -68,11 +68,9 @@
     /*=================== NAVBAR-*/
     .navMobile {
         font-size: 2em;
-        /*float: right;*/
         writing-mode: bt-lr;
         transform: rotate(360deg);
         border-left: 8px solid #305252;
-        /*padding-left: .5em;*/
         margin: 0 auto;
         width: 30%;
         font-weight: lighter;
@@ -111,6 +109,95 @@
         font-weight: lighter;
     }
 
+    .line{
+        transform: rotate(90deg);
+        border-bottom: 8px solid #305252;
+        margin-left: 5vw;
+        margin-top: 10vh;
+        width: 60vh;
+    }
+
+    #line2{
+        width: 40vh;
+        margin-left: 35vw;
+        margin-top: 25vh;
+    }
+
+    /*================== PROJECTS */
+    .projects {
+        width: 100vw;
+        height: 300vh;
+        margin-top: 30vh;
+        border-right: 10px solid #305252;
+    }
+
+    /*======== PROJECTS */
+    .projectText h2 {
+        font-weight: lighter;
+        font-size: 5em;
+        padding-bottom: .1em;
+    }
+
+    /*========= PROJECT TITLES */
+    .brokeText {
+        transform: rotate(90deg);
+        height: auto;
+        font-size: 3em;
+        float: right;
+        font-weight: lighter;
+    }
+
+    #hilltopProjectText{
+        margin-right: -26vw;
+        margin-top: -26.5vh;
+    }
+
+    #capstoneProjectText{
+        margin-right: -14vw;
+        margin-top: -20vh;
+    }
+
+    #adListerProjectText{
+        margin-right: -8vw;
+        margin-top: -16vh;
+    }
+
+
+
+    /*=================== IND PROJECT CONTAINERS */
+
+    .projectTitle {
+        font-weight: lighter;
+        transform: rotate(180deg);
+        color: white;
+        font-size: 5em;
+        writing-mode: vertical-rl;
+        text-align: center;
+        margin: 0 auto;
+        background-color: #305252;
+    }
+
+    .indProjects {
+        margin-top: 5em;
+        float: left;
+        width: 80%;
+    }
+
+    .projectImg{
+        width: 100%;
+        height: 75vh;
+        border-top-right-radius: 100px;
+        border-bottom-left-radius: 100px;
+        border-right: 5px solid #305252;
+    }
+
+    #hilltopProject {
+        margin-top: 0;
+    }
+
+    /*========== IND PROJECT ON CLICK*/
+
+
     /*======================== RESUME*/
     #resumeBtn {
         width: 100vw;
@@ -118,7 +205,7 @@
         background-color: #305252;
         padding: 1em;
         float: left;
-        margin-top: 25vh;
+        margin-top: 50vh;
     }
 
     #resumeBtn a {
@@ -153,84 +240,6 @@
         margin-left: 1em;
         padding-right: 1em;
     }
-
-    /*================== PROJECTS */
-    .projects {
-        width: 100vw;
-        height: 300vh;
-        margin-top: 40vh;
-        /*margin-top: 26vh;*/
-        border-right: 10px solid #305252;
-    }
-
-    /*======== PROJ */
-    .projectText h2 {
-        font-weight: lighter;
-        font-size: 5em;
-        /*margin-left: 37.6vh;*/
-        padding-bottom: .1em;
-        /*margin-top: 2em;*/
-    }
-
-    /*========= EJCTS */
-    #brokeText {
-        transform: rotate(90deg);
-        /*height: 6vh;*/
-        font-size: 5em;
-        width: 10vw;
-        float: right;
-        border: 2px solid red;
-        font-weight: lighter;
-    }
-
-    /*#fallingText {*/
-    /*    padding-left: .2em;*/
-    /*}*/
-
-    /*=================== IND PROJECT CONTAINERS */
-
-    .projectTitle {
-        font-weight: lighter;
-        transform: rotate(180deg);
-        color: white;
-        font-size: 5em;
-        writing-mode: vertical-rl;
-        text-align: center;
-        margin: 0 auto;
-        background-color: #305252;
-        /*padding-top: 10vh;*/
-        /*height: 110%;*/
-    }
-
-    .indProjects {
-        margin-top: 5em;
-        float: left;
-        width: 80%;
-    }
-
-    .projectImg{
-        width: 100%;
-        height: 75vh;
-        border-top-right-radius: 100px;
-        border-bottom-left-radius: 100px;
-        border-right: 5px solid #305252;
-    }
-
-    #hilltopProject {
-        margin-top: 0;
-        border: 2px solid red;
-    }
-
-    /*#capstone {*/
-    /*    background-image: url("../img/AltiDND.jpg");*/
-    /*}*/
-
-    /*#adLister {*/
-    /*    background-image: url("../img/at-zoom2.jpg");*/
-    /*}*/
-
-    /*========== IND PROJECT ON CLICK*/
-
 }
 
 
