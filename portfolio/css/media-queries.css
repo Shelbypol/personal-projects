@@ -58,6 +58,14 @@
         text-decoration-color: #305252;
     }
 
+    /*================== FALLING CROOKED TEXT*/
+    /*create div */
+    {
+        transform: rotate(30deg);
+        writing-mode: vertical-rl;
+        margin-right: 10vw;
+    }
+
     /*================== NAVBAR & TITLE CONTAINER-*/
     #mobileContainer {
         margin-top: 25vh;
@@ -117,44 +125,53 @@
         width: 60vh;
     }
 
+    #line1{
+        border-bottom: 3px solid #305252;
+    }
+
     #line2{
-        width: 40vh;
+        /*height: 50vw;*/
+        width: 20vh;
         margin-left: 35vw;
         margin-top: 25vh;
+        border-bottom: 8px solid #305252;
+    }
+
+    #line3{
+        width: 25vh;
+        margin-left: 40vw;
+        margin-top: 20vh;
+        border-bottom: 20px solid #305252;
     }
 
     /*================== PROJECTS */
     .projects {
         width: 100vw;
         height: 300vh;
-        margin-top: 30vh;
+        margin-top: -10vh;
         border-right: 10px solid #305252;
+        transform: rotate(180deg);
     }
 
     /*======== PROJECTS */
-    .projectText h2 {
+    #projectText{
+        padding-bottom: .2em;
+        border-bottom: 3px solid #305252;
         font-weight: lighter;
         font-size: 5em;
-        padding-bottom: .1em;
+        margin-top: -10vh;
+        transform: rotate(90deg);
+        writing-mode: vertical-rl;
+        margin-left: 49vw;
     }
 
+
     /*========= PROJECT TITLES */
-    .brokeText {
+    .indProjectTitle {
         transform: rotate(90deg);
-        height: auto;
         font-size: 3em;
         float: right;
         font-weight: lighter;
-    }
-
-    #hilltopProjectText{
-        margin-right: -26vw;
-        margin-top: -26.5vh;
-    }
-
-    #capstoneProjectText{
-        margin-right: -14vw;
-        margin-top: -20vh;
     }
 
     #adListerProjectText{
@@ -162,8 +179,15 @@
         margin-top: -16vh;
     }
 
+    #capstoneProjectText{
+        margin-right: -14vw;
+        margin-top: -20vh;
+    }
 
-
+    #hilltopProjectText{
+        margin-right: -25vw;
+        margin-top: -25vh;
+    }
     /*=================== IND PROJECT CONTAINERS */
 
     .projectTitle {
@@ -178,9 +202,10 @@
     }
 
     .indProjects {
-        margin-top: 5em;
         float: left;
         width: 80%;
+        margin-top: 5em;
+        z-index: 100;
     }
 
     .projectImg{
